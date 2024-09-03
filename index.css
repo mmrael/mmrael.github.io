@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: hsl(115, 100%, 93%);
     font-family: "Playfair Display", serif;
     font-size: 20px;
     font-optical-sizing: auto;
@@ -19,8 +19,12 @@ h1 {
     font-size: 60px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 .my-container {
-    background-color: black;
+    background-color: hsl(0, 0%, 100%);
 }
 
 
