@@ -1,11 +1,27 @@
 body {
-    background-color: rgb(244, 255, 239);
-    font-family: fantasy;
+    background-color: #ffffff;
+    font-family: "Playfair Display", serif;
     font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:#002e1e;
 }
 
 a {
-    color: rgb(255, 0, 0);
+    color: #00ff6e;
 
 
 }
+
+h1 {
+    font-family: cursive;
+    font-size: 60px;
+}
+
+.my-container {
+    background-color: hsl(0, 0%, 0%);
+}
+
+
+
