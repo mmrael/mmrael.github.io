@@ -7,7 +7,7 @@ body {
     font-family: "Quintessential", serif;
     color: hsl(0, 100%, 90%);
     margin: 0px;
-    font-size: 125px;
+    font-size: 105px;
   }
 
 
@@ -72,7 +72,7 @@ body {
     border-radius: 20px;
     position:relative;
     bottom: 615px;
-    left: 150px;
+    left: 145px;
   }
 
   .capital {
