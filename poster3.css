@@ -1,0 +1,199 @@
+body {
+    background:black;
+    margin: 0px;
+  }
+
+  h1 { 
+    font-family: "Tangerine", cursive;
+    color: hsl(0, 100%, 90%);
+    margin: 0px;
+    font-size: 125px;
+  }
+
+
+  h2 {
+    font-family: "Tangerine", cursive;
+    font-size: 200px;
+    font-style: normal;
+    color: hsl(0, 100%, 90%);
+  }
+
+  h3 {
+    font-family: "Jacques Francois Shadow", serif;
+    color: hwb(0 26% 15%);
+    margin: 0px;
+    font-size: 300px;
+
+  } 
+
+  .jacques-francois-shadow-regular {
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  .tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
+  
+  .poster {
+    background: url(https://www.hinterlandiowa.com/wp-content/uploads/2023/12/ChappellRoan-photo-2825x1663-1.jpg);
+    border-radius: 20px;
+    border-color: #fff;
+    position: relative;
+    margin: 10px auto; 
+    padding: 20px;
+    height: 90vh; 
+    width: 95vw; 
+    top: -300px;
+    left: 225px;
+  }
+
+
+  .hapell {
+    width:30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    top: -300px;
+    left: 225px;
+  }
+
+  .roan {
+    width:30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    bottom: 615px;
+    left: 150px;
+  }
+
+  .capital {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    bottom: 750px;
+    left: 175px;
+    right: 100px;
+
+  }
+
+  .name {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    top: -50px;
+    bottom: 700px;
+    left: 125px;
+    right: 100px;
+  }
+
+  .script {
+    width: 275px;
+    height: 75px;
+    background: black;
+    font-family: "Tangerine", cursive;
+    font-size: 35px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    color: hsl(0, 0%, 43%); 
+    border-radius: 275px / 75px;
+    position:absolute;
+    bottom: 275px;
+    left: 325px;
+
+  }
+
+  .midwest {
+    width: 50vh;
+    height: 1vh;
+    background: black;
+    border-radius: 20px;
+    position:absolute;
+    
+  }
+
+
+  
+  
+  .circle {
+    width:30vh;
+    height: 30vh;
+    background:black;
+    border-radius:50%;
+    position:absolute;
+    bottom:125px;
+    right:375px;
+  }
+
+
+
+  .rectangle {
+    width:30vh;
+    height: 15vh;
+    background: hwb(0 26% 15%);
+    font-family: "Grenze Gotisch", serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #420022;
+    border-radius: 20px;
+    border-color: #fff;
+    position: absolute;
+    bottom: 125px;
+    left: 475px;
+}
+
+.info {
+  width:30vh;
+  height: 15vh;
+  background: hwb(0 26% 15%);
+  border-radius: 20px;
+  position:absolute;
+  top: 10px;
+
+    
+}
+
+.rectangle2 {
+  width:30vh;
+  height: 7vh;
+  background: hwb(0 26% 15%);
+  font-family: "Grenze Gotisch", serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(329, 98%, 23%);
+  border-radius: 20px;
+  border-color: #fff;
+  position: absolute;
+  bottom: 25px;
+  left: 925px;
+}
+
+.info2 {
+  width:30vh;
+  height: 7vh;
+  background: hwb(0 26% 15%);
+  border-radius: 20px;
+  position:absolute;
+  top: 10px;
+
+    
+}
