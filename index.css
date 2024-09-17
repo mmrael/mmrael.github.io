@@ -10,6 +10,7 @@ body {
 
 a {
     color: #00ff6e;
+    transition: 200ms;
 
 }
 
