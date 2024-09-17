@@ -54,9 +54,9 @@ body {
     position: relative;
     margin: 10px auto; 
     padding: 20px;
-    height: 90vh; 
-    width: 95vw; 
-    top: -300px;
+    height: 500vh; 
+    width: 500vw; 
+    top: 500px;
     left: 225px;
   }
 
@@ -114,7 +114,7 @@ body {
     border-radius: 275px / 75px;
     position:absolute;
     bottom: 275px;
-    left: 325px;
+    left: 725px;
 
   }
 
@@ -155,7 +155,7 @@ body {
     border-radius: 20px;
     border-color: #fff;
     position: absolute;
-    bottom: 125px;
+    bottom: 425px;
     left: 475px;
 }
 
