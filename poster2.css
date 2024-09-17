@@ -47,8 +47,7 @@ body {
   
   .poster {
     background: url(https://i.imgur.com/H23nNzy.png);
-    border: 30px #420022;
-    border-radius: 20px;
+    border: 10px solid #420022;
     position: fixed;
     margin: 10px auto; 
     padding: 20px;
@@ -179,7 +178,7 @@ body {
   border-radius: 20px;
   border-color: #fff;
   position: absolute;
-  bottom: 25px;
+  bottom: 45px;
   left: 925px;
 }
 

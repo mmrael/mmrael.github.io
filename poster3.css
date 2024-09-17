@@ -136,11 +136,15 @@ body {
     background:black;
     border-radius:50%;
     position:absolute;
-    bottom:125px;
-    right:375px;
+    top: 175px;
+    left:1500px;
+    transform: skew(15deg, 15deg);
   }
 
+  .circle:hover {
+    background-size: 120%;
 
+  }
 
   .rectangle {
     width:30vh;
