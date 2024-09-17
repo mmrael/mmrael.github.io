@@ -4,7 +4,7 @@ body {
   }
 
   h1 { 
-    font-family: "Tangerine", cursive;
+    font-family: "Quintessential", serif;
     color: hsl(0, 100%, 90%);
     margin: 0px;
     font-size: 125px;
@@ -13,7 +13,7 @@ body {
 
   h2 {
     font-family: "Tangerine", cursive;
-    font-size: 200px;
+    font-size: 225px;
     font-style: normal;
     color: hsl(0, 100%, 90%);
   }
@@ -47,9 +47,9 @@ body {
   
   .poster {
     background: url(https://i.imgur.com/H23nNzy.png);
+    border: 30px #420022;
     border-radius: 20px;
-    border-color: #fff;
-    position: relative;
+    position: fixed;
     margin: 10px auto; 
     padding: 20px;
     height: 90vh; 
@@ -175,7 +175,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: hsl(329, 98%, 23%);
+  color: #420022;
   border-radius: 20px;
   border-color: #fff;
   position: absolute;
