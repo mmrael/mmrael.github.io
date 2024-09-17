@@ -100,14 +100,14 @@ body {
 
   .script {
     width: 350px;
-    height: 75px;
+    height: 85px;
     background: red;
     font-family: "Fleur De Leah", cursive;
     font-size: 40px;
     font-style: normal;
     line-height: 115%;
-    color: #ffd8d8; 
-    border-radius: 350px / 75px;
+    color: #fff; 
+    border-radius: 350px / 85px;
     position:absolute;
     bottom: 255px;
     left: 75px;
