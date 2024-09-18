@@ -131,9 +131,9 @@ body {
   
   
   .circle {
-    width:30vh;
-    height: 30vh;
-    background:black;
+    width:100vh;
+    height: 100vh;
+    background:#031708;
     border-radius:50%;
     position:absolute;
     top: 175px;

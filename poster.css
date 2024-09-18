@@ -102,10 +102,10 @@ body {
     width: 350px;
     height: 85px;
     background: red;
-    font-family: "Fleur De Leah", cursive;
-    font-size: 40px;
+    font-family: "Tangerine", cursive;
+    font-size: 50px;
     font-style: normal;
-    line-height: 115%;
+    line-height: 80%;
     color: #fff; 
     border-radius: 350px / 85px;
     position:absolute;
