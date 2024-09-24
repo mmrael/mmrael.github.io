@@ -54,8 +54,11 @@ padding: 20px;
 height: 75vh; 
 width: 75vh; 
 top: 85px;
+transition: 200ms;
 
   }
+
+
   .poster {
     background: url(https://i.imgur.com/5lwwHBU.png);
     border-radius: 20px;
@@ -66,6 +69,12 @@ top: 85px;
     height: 93vh; 
     width: 70vh; 
     top: -105px;
+    transition: 200ms;
+  }
+
+  .poster:hover {
+background: url(https://i.imgur.com/hLR7d2W.png);
+
   }
 
 
@@ -108,7 +117,26 @@ top: 85px;
     bottom: 750px;
     left: -10px;
     right: 100px;
+    transition: 200ms;
   }
+
+  .name:hover {
+    letter-spacing: 20px;
+    width: 45vh;
+    
+      }
+
+      h1:hover {
+        color: hsl(134, 100%, 65%);
+
+      }
+
+      h2:hover {
+        color: hsl(134, 100%, 65%);
+
+      }
+
+
 
   .script {
     width: 360px;
