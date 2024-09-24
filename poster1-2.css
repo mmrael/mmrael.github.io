@@ -1,0 +1,257 @@
+body {
+    background:hwb(0 0% 100%);
+    margin: 0px;
+  }
+
+  h1 { 
+    font-family: "Jacques Francois Shadow", serif;
+    color: red;
+    margin: 0px;
+    font-size: 75px;
+  }
+
+
+  h2 {
+    font-family: "Tangerine", cursive;
+    font-size: 175px;
+    font-style: normal;
+    color: red; 
+  }
+
+  h3 {
+    font-family: "Jacques Francois Shadow", serif;
+    color: red;
+    margin: 0px;
+    font-size: 200px;
+
+  } 
+
+  .jacques-francois-shadow-regular {
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  .tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  .posterborder {
+background-color: #000;
+border: 15px double red;
+position: relative;
+margin: 10px auto; 
+padding: 20px;
+height: 85vh; 
+width: 75vh; 
+top: 75px;
+
+  }
+  .poster {
+    background: url(https://i.imgur.com/fIr64mF.png);
+    border-radius: 20px;
+    border-color: #fff;
+    position: relative;
+    margin: 10px auto; 
+    padding: 20px;
+    height: calc(112vh - 40px - 20px); 
+    width: 68vh; 
+    top: -70px;
+  }
+
+
+  .hapell {
+    width:30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    top: -200px;
+    left: 155px;
+  }
+
+  .roan {
+    width:30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    bottom: 510px;
+    left: 85px;
+  }
+
+  .capital {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    top: -25px;
+    bottom: 700px;
+    left: 175px;
+    right: 100px;
+
+  }
+
+  .name {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 20px;
+    position:relative;
+    top: -75px;
+    bottom: 750px;
+    left: -10px;
+    right: 100px;
+  }
+
+  .script {
+    width: 385px;
+    height: 80px;
+    background: none;
+    font-family: "Tangerine", cursive;
+    font-size: 65px;
+    font-style: normal;
+    line-height: 80%;
+    color: hsl(237, 67%, 51%); 
+    border-radius: 350px / 85px;
+    position:absolute;
+    bottom: 265px;
+    left: 75px;
+
+  }
+
+  .midwest {
+    width: 60vh;
+    height: 1vh;
+    background: none;
+    border-radius: 20px;
+    position:absolute;
+    
+  }
+
+
+  
+  
+  .circle {
+    width:25vh;
+    height: 25vh;
+    background:#ff00a6;
+    border-radius:50%;
+    position:absolute;
+    bottom:55px;
+    right:30px;
+    transition: 200ms;
+  }
+
+  .circle:hover {
+    width:27vh;
+    height: 27vh;
+background: hsl(237, 67%, 51%)
+
+  }
+
+
+
+  .rectangle {
+    width:30vh;
+    height: 15vh;
+    background: hsl(237, 67%, 51%);
+    font-family: "Chicle", serif;
+    font-size: 32px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff00a6;
+    border-radius: 20px;
+    border-color: #fff;
+    position: absolute;
+    bottom: 125px;
+    left: 25px;
+    transition: 200ms;
+}
+
+.rectantgle:hover {
+    background: #ff00a6;
+    font-family: "Chicle", serif;
+    font-size: 32px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(237, 67%, 51%);
+
+
+}
+
+.info {
+  width:30vh;
+  height: 15vh;
+  background: hsl(237, 67%, 51%);
+  border-radius: 20px;
+  position:absolute;
+  top: 10px;
+  transition: 200ms;
+    
+}
+
+.info:hover {
+    width:35vh;
+    height: 17vh;
+background: #ff00a6;
+font-family: "Chicle", serif;
+font-size: 32px;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+color: hsl(237, 67%, 51%);
+border: 5px dotted hsl(237, 67%, 51%);
+left: 10px;
+}
+
+.rectangle2 {
+  width:30vh;
+  height: 7vh;
+  background: hsl(237, 67%, 51%);
+  font-family: "Chicle", serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff00a6;
+  border-radius: 20px;
+  border-color: #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+}
+
+.info2 {
+  width:30vh;
+  height: 7vh;
+  background: hsl(237, 67%, 51%);
+  border-radius: 20px;
+  position:absolute;
+  top: 10px;
+  transition: 200ms;
+    
+}
+
+.info2:hover {
+
+    width:35vh;
+    height: 8vh;
+background: #ff00a6;
+font-family: "Chicle", serif;
+font-size: 23px;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+color: hsl(237, 67%, 51%);
+border: 5px dotted hsl(237, 67%, 51%);
+left: 10px;
+}
