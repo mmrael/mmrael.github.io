@@ -51,9 +51,9 @@ border: 15px dotted hwb(0 26% 15%);
 position: relative;
 margin: 10px auto; 
 padding: 20px;
-height: 85vh; 
+height: 75vh; 
 width: 75vh; 
-top: 75px;
+top: 85px;
 
   }
   .poster {
@@ -65,7 +65,7 @@ top: 75px;
     padding: 20px;
     height: 93vh; 
     width: 70vh; 
-    top: -70px;
+    top: -105px;
   }
 
 
