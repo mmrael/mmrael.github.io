@@ -111,6 +111,7 @@ body {
     position:absolute;
     bottom: 255px;
     left: 75px;
+    transition: 200ms;
 
   }
 
@@ -128,6 +129,7 @@ body {
 width: 375px;
 height: 90px;
 left: 55px;
+bottom: 245px;
 background: #ffaff3;
 color: red;
   }
