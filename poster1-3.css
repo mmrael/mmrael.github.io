@@ -69,12 +69,12 @@ transition: 200ms;
     height: 93vh; 
     width: 70vh; 
     top: -105px;
-    transition: 300ms;
+    transition: 1000ms;
   }
 
   .poster:hover {
 background: url(https://i.imgur.com/hLR7d2W.png);
-transition: 300ms;
+
   }
 
 
