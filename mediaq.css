@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
 }
 
 
@@ -124,6 +126,22 @@ body {
         background: url(https://64.media.tumblr.com/476214e4c47702edba7429eb487134b7/3ddc640f16106594-a1/s540x810/ea30f590bbf40811c09c9960c678c4327a9ba595.gifv);
         
     }
+}
+
+.my-container {
+    background-color: hsl(0, 100%, 12%);
+    opacity: 0;
+}
+
+a {
+    color: hsl(0 0% 100%);
+
+
+}
+
+.my-container:hover {
+opacity: 1;
+
 }
 
 
