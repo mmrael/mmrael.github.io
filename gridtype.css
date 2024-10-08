@@ -8,7 +8,15 @@ body {
 
 
 
-
+.container {
+    background-color: rgb(255, 175, 223);
+    border-radius: 20px;
+    border-color: #fff;
+    position: relative;
+    padding: 20px;
+    height: 200px; 
+    width: 1000px; 
+  }
 
 .oval {
     width: 100px;
