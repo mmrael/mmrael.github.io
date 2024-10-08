@@ -1,0 +1,200 @@
+body {
+    background-color: rgb(255, 175, 223);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+
+.oval:hover, .oval2:hover, .oval3:hover, .oval4:hover, .oval5:hover, .oval6:hover, .oval7:hover {
+    background: rgb(255, 175, 223);
+    width: 200px;
+    height: 200px;
+
+
+}
+
+
+
+.oval {
+    width: 100px;
+    height: 200px;
+    background: red;
+    border-radius: 200px / 100px;
+    transition: 400ms;
+  }
+
+
+  .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 91px solid transparent;
+    border-left: 182px solid red;
+    border-bottom: 91px solid transparent;
+    position: relative;
+    right: -90px;
+    top: -190px;
+
+  }
+
+  .triangle-inner {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid rgb(255, 175, 223);
+    border-bottom: 50px solid transparent;
+    position: relative;
+    right: -100px;
+    top: -325px;
+    transition: 400ms;
+
+  
+  }
+
+  .triange-inner:hover {
+    border-left: red;
+    transition: 400ms;
+
+}
+
+  .oval2 {
+    width: 100px;
+    height: 200px;
+    background: red;
+    border-radius: 200px / 100px;
+    position: relative;
+    right: -300px;
+    top: -325px;
+    transition: 400ms;
+  }
+
+
+.oval3 {
+    width: 125px;
+    height: 100px;
+    background: red;
+    border-radius: 100px / 50px;
+    position: relative;
+    right: -385px;
+    top: -500px;
+    transition: 400ms;
+  }
+
+
+  .oval4 {
+    width: 100px;
+    height: 200px;
+    background: red;
+    border-radius: 100px / 50px;
+    position: relative;
+    right: -600px;
+    top: -600px;
+    transition: 400ms;
+  }
+
+  .oval5 {
+    width: 175px;
+    height: 75px;
+    background: red;
+    border-radius: 100px / 50px;
+    position: relative;
+    right: -600px;
+    top: -660px;
+    transition: 400ms;
+  }
+
+
+  .triangle3 {
+    width: 0;
+    height: 0;
+    border-top: 62.5px solid transparent;
+    border-left: 125px solid red;
+    border-bottom: 62.5px solid transparent;
+    position: relative;
+    right: -675px;
+    top: -875px;
+
+  }
+
+  .triangle4 {
+    width: 0;
+    height: 0;
+    border-top: 37.5px solid transparent;
+    border-left: 75px solid rgb(255, 175, 223);
+    border-bottom: 37.5px solid transparent;
+    position: relative;
+    right: -675px;
+    top: -975px;
+    transition: 400ms;
+  
+  }
+
+  .triangle5 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid red;
+    position: relative;
+    right: -900px;
+    top: -1075px;
+  }
+
+  .triangle6 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(255, 175, 223);
+    position: relative;
+    right: -950px;
+    top: -1180px;
+    transition: 400ms;
+  }
+
+
+  .letter {
+    display:flex;
+    flex-wrap:wrap;
+    width:75vw;
+    height:calc(100vh - 20px);
+    margin-left:5px;
+    border-radius:20px;
+  }
+  
+
+  .oval6 {
+    width: 100px;
+    height: 200px;
+    background: red;
+    border-radius: 100px / 50px;
+    position: relative;
+    right: -1175px;
+    top: -1500px;
+    transition: 400ms;
+  }
+
+
+  .triangle7 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    position: relative;
+    right: -1150px;
+    top: -1490px;
+  }
+
+  .oval7 {
+    width: 100px;
+    height: 200px;
+    background: red;
+    border-radius: 100px / 50px;
+    position: relative;
+    right: -1130px;
+    top: -1500px;
+    transition: 400ms;
+  }
+
+  
+
