@@ -42,11 +42,15 @@ background: hsl(115, 100%, 93%);
 
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2000px) {
     body {
       background-color: hsl(0, 0%, 0%); 
       font-style: normal;
       color:hsl(115, 100%, 93%);
+    }
+
+
+
     }
       a:hover {
         color: #000;
@@ -61,7 +65,7 @@ background: hsl(115, 100%, 93%);
 background-color: #000;
 
     }
-    }
+
 
 @media (max-width: 768px) {
     body {
