@@ -55,6 +55,7 @@ background: hsl(115, 100%, 93%);
       a:hover {
         color: #000;
         background-color: #000;
+        cursor: crosshair;
     
     }
     .my-container {
