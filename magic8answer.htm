@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖤  Magic 8 Ball</title>
+
+    <link rel="stylesheet" type="text/css" href="magic8answer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>The mist is swirling...</h1>
+           <div class="hello"><h1>My senses are tingling...</h1></div>
+           <BR><BR><BR>
+               <center><h1>My sources say:</h1></center><BR><BR><BR>
+        <center>
+        <div class="answer-box"></div></a>
+    </center>
+<BR><BR><BR><BR>
+    <center>
+<a href="magic8ball1.htm"><div class="button">Ask again?</div></a></center>
+    <BR><BR>
+        <a href="index.html#header"><div class="my-container">← Back to homepage</div></a>
+</main>
+
+<script type="text/javascript">
+    let answer = ["It doesn't appear so.", "Hmm... better check back again in three weeks, love.", "I don't know, dear.", "No one knows that, dear.", "Of course. Why did you even ask?", "Hmm... I'll have to ruminate on that. Leave your contact?", "Nothing has ever been more affirmative, love.", "Oh, stop wasting my time."];
+    let randomAnswer = Math.floor(Math.random() * answer.length);
+    let answerBox = document.querySelector(".answer-box");
+    window.addEventListener("load", () => {
+answerBox.textContent = answer[randomAnswer];
+
+    });
+
+
+
+</script>
+</html>

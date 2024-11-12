@@ -1,0 +1,126 @@
+body {
+    background-color: hsl(115, 100%, 93%);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:#002e1e;
+}
+
+a {
+    color: #00ff6e;
+    transition: 200ms;
+
+}
+
+a:hover {
+    color: #00ff6e;
+    background-color: #002e1e;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 50px;
+}
+
+h1:hover {
+    color: #00ff6e;
+    background-color: hsl(0, 0%, 0%);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.my-container {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.my-container:hover {
+background: hsl(115, 100%, 93%);
+
+}
+
+
+
+@media (max-width: 2000px) {
+    body {
+      background-color: hsl(0, 0%, 0%); 
+      font-style: normal;
+      color:hsl(115, 100%, 93%);
+    }
+
+
+
+    }
+      a:hover {
+        color: #000;
+        background-color: #000;
+    
+    }
+    .my-container {
+        background-color: hsl(0, 0%, 0%);
+    }
+
+    .my-container:hover {
+background-color: #000;
+
+    }
+
+    .button {
+        background-color: #002e1e;
+        border: none;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin: 4px 2px;
+        border-radius: 12px; 
+        height: 20px;
+        width: 100px;
+        transition: 500ms;
+    }
+
+    .button:hover {
+        color: #00ff6e;
+        background-color: #000;
+
+    }
+
+    .hello {
+        background: #000;
+        border-radius: 20px;
+        border-color: #000;
+        position: absolute;
+        margin: 10px auto; 
+        padding: 20px;
+        height: 10px;
+        width: 500px;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+    }
+
+
+@media (max-width: 768px) {
+    body {
+      background-color: #002e1e; 
+      font-style: normal;
+      color:hsl(115, 100%, 93%);
+    }
+      a {
+        color: #00ff6e;
+    
+    }
+    .my-container {
+        background-color: #000;
+    }
+    }
+
+
