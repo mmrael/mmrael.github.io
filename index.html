@@ -111,9 +111,37 @@
         <BR><BR>
 
             <BR>
-                <a href="#header">↑ Back to top</a><BR>
+                <a href="#header">↑ Back to top</a><BR><BR>
+
+                    <h1 id="demo"></h1>
         </center>
     </div>
+
+    <script type=""text/javascript">
+    let element = document.getElementById("demo");
+
+console.log(new Date());
+
+console.log(new Date().getMonth());
+
+let months = ["Jan", "Feb", "March", "April", "May", "Jun", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
+let currentMonth = months[new Date().getMonth()];
+
+element.innerHTML = "The month is " + currentMonth +".";</script>
+
+
+    <script type="text/javascript">
+        const rightNow = new Date("demo").getHours;
+        if (rightNow >= 12) {
+let period = "PM";
+} else {
+let period = "AM";
+}
+
+div.innerHTML += rightNow + period;
+
+          </script>
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <script type="text/javascript">
     new cursoreffects.fairyDustCursor({
