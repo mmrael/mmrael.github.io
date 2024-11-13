@@ -14,8 +14,8 @@
     <main><BR><BR><BR><BR><BR><BR>
         <center>
 <a href="magic8ball1.htm">
-        <h1><div class="question-box"></div></a>
-    </h1></center>
+        <h2><div class="question-box"></div></a>
+    </h2></center>
 <BR><BR><BR><BR><BR><BR><BR><BR>
     <BR><BR>
 
@@ -24,7 +24,7 @@
 </main>
 
 <script type="text/javascript">
-    let question = ["Would you like to ask a question?", "Don't be shy.", "I have what you seek.", "Don't be afraid.", "Have a question? I might have the answer.", "I'm a very busy woman, and I haven't got all day.", "Step closer, friend.", "Well, come on.", "Step forward."];
+    let question = ["Would you like to ask a question?", "Don't be shy.", "I have what you seek.", "Don't be afraid.", "Have a question? I might have the answer.", "I'm a busy woman, and I haven't got all day.", "Step closer, friend.", "Well, come on.", "Step forward."];
     let randomQuestion = Math.floor(Math.random() * question.length);
     let questionBox = document.querySelector(".question-box");
     window.addEventListener("load", () => {
