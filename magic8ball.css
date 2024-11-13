@@ -10,7 +10,7 @@ body {
 
 a {
     color: #00ff6e;
-    transition: 200ms;
+    transition: 500ms;
 
 }
 
@@ -58,7 +58,7 @@ background: hsl(115, 100%, 93%);
     
     }
     .my-container {
-        background-color: #000;
+        background-color: #000000;
     }
 
     .my-container:hover {
