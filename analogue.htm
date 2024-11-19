@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Analogue Demo</title>
+
+<style>
+.hand {
+position: abolsute;
+bottom: 50%;
+left: 50%;
+transform-origin: bottom;
+border-radius: 1px;
+
+}
+
+.hour {
+width: 6px;
+height: 35%;
+background: linear-gradient(to bottom, white 0%, white 45%, black 45%, black 100%);
+transform: translateX(-50%);
+
+}
+
+    </style>
+<body>
+    <div class="clock">
+    <div class="center-point">
+    <div class="hand hour"></div>
+    <div class="hand minute"></div>
+    <div class="hand second"></div>
+</div>
+
+<script>
+    const hourHand = document.querySelector('.hour');
+    const minuteHand = document.querySelector('.minute');
+    const secondHand = document.querySelector('.second');
+    const clock = document.querySelector('.clock');
+
+
+// Add clock markers
+let totalMarkers = 60;
+for (let i = 0; i < totalMarkers; i++) {
+const marker = document.createElement('div');
+marker.className = 'marker';
+if (i % 15 === 0) marker.classListadd ('quarter');
+marker.style.transform = `rotate(${i * 360 / totalMarkers}deg)`;
+clock.appendChild(marker);
+
+}
+</script>
+    </div></body>

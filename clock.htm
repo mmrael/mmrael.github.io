@@ -59,9 +59,14 @@
 				color: plum;
 			}
 
+            .midnight {
+                background-color: hsl(240, 100%, 9%);
+                color: #ffe657;
+            }
+
 			.late {
-				background-color: navy;
-        color: gold;
+				background-color: hsl(240, 100%, 9%);
+        color: #ffe657;
 			}
 		</style>
 	</head>
@@ -92,28 +97,29 @@
 				let minutes = date.getMinutes();
 				let seconds = date.getSeconds();
 
+                                    // Temporary troubleshooting - un-comment to write specific data for testing
+// hours = 0;
+  	// minutes = 14;
+  	// seconds = 33;
 
                 if (hours >= 5 && hours < 12) {
   messageText.textContent = "¡Buenos dias! ☀️";
   document.body.className = "morning";
 } else if (hours >= 12 && hours < 17) {
-  messageText.textContent = "Good afternoon!";
+  messageText.textContent = "¡Buenas tardes! ⛅️";
   document.body.className = "afternoon";
 } else if (hours >= 17 && hours < 21) {
-  messageText.textContent = "Good evening!";
+  messageText.textContent = "Buenas noches 🌅";
   document.body.className = "evening";
 } else if (hours === 0) {
-  messageText.textContent = "It's midnight!";
+  messageText.textContent = "!Es media noche! 🌙";
   document.body.className = "midnight";
 } else {
-  messageText.textContent = "It's late!";
+  messageText.textContent = "🌌";
   document.body.className = "late";
 }
 
-                    // Temporary troubleshooting - un-comment to write specific data for testing
-    // hours = 14;
-  	// minutes = 14;
-  	// seconds = 33;
+
 
 				// Set AM/PM
 				let ampm;
