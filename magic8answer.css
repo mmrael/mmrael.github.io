@@ -67,6 +67,15 @@ background: hsl(115, 100%, 93%);
 background-color: #000;
 
     }
+    .h3 {
+        background-color: #000;
+        position: fixed;
+        font-size: 15px;
+        height: 15px;
+        width: 200px;
+        left: 662px;
+        bottom: 415px;
+        }
 
     .button {
         background-color: #002e1e;
@@ -113,6 +122,7 @@ background-color: #000;
         border-radius: 20px;
         margin: 10px auto; 
         padding: 20px;
+        text-align: center;
         height: 125px;
         width: 1000px;
         position: absolute;
