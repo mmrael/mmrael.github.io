@@ -11,22 +11,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <style>
-    body:hover {
-        color: #00ff6e;
+
+.header:hover {
+    color:#00ff6e;
+    background-color: #002e1e;
+}
+
+.imgheader {
+    background: url(https://pbs.twimg.com/media/GaTGhwFXsAAbnuX?format=jpg&name=900x900);
+    position: static;
+    height: 100px;
+    width: 1500px;
+}
+
+    .logo {
+        background-color: #000;
+    border: 10px solid #00ff6e;
+position: fixed;
+right: 10px;
+height: 15vh;
+width: 15vh;
+transition: 500ms;
     }
 
-    .header:hover {
-        background-color: #002e1e;
+    .logo:hover {
+        border: 10px dotted #00ff6e;
     }
+
+    .parent {
+	background-color: #000;
+	padding: 30px;
+	width: 500px;
+	margin: 30px;
+  font-family: sans-serif;
+}
+
+.asavajda {
+	width: 100vw;
+	opacity: 0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	pointer-events: none;
+    transition: 200ms;
+}
+
+.parent:hover img {
+  opacity: 1;
+  
+}
 </style>
+
 <body>
-    <BR>
+    <div class="imgheader"></div>
+    <div class="logo"><center><img src="https://i.imgur.com/pvrJ4eX.png" height="100" width="100"></center></div>
         <div class="header">
+
     Madeline Rael<BR>
-        Graphic design
+        Designer<BR>
     </div>
-    <BR>
-        <a href="index.html">Student Work</a><BR>
-        <a href="index.html">About</a>
+<BR>
+        <a href="index.html">Parsons</a><BR>
+        <a href="index.html#about">About</a>
+        <BR><BR>
+
+            <center>
+                <div class="parent">
+                    <img class="asavajda" src="https://m.media-amazon.com/images/M/MV5BMTk0NTcyNTkwM15BMl5BanBnXkFtZTgwODg1NDAxNzE@._V1_.jpg">
+                </div>
+            </center>
     </body>
     </html>
