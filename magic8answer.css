@@ -138,19 +138,6 @@ background-color: #000;
     }
 
 
-@media (max-width: 768px) {
-    body {
-      background-color: #002e1e; 
-      font-style: normal;
-      color:hsl(115, 100%, 93%);
-    }
-      a {
-        color: #00ff6e;
-    
-    }
-    .my-container {
-        background-color: #000;
-    }
-    }
+
 
 
