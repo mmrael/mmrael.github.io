@@ -157,7 +157,7 @@ background-color: #000;
 
     .answer-box {
         background: #000;
-        color: #000;
+        color: hsl(115, 100%, 93%);
         border-radius: 20px;
         margin: 10px auto; 
         padding: 20px;
