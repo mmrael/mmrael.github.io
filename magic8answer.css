@@ -145,7 +145,6 @@ background-color: #000;
 
 
     .senses {
-        background: #000;
         border-radius: 20px;
         border-color: #000;
         position: absolute;
@@ -164,7 +163,7 @@ background-color: #000;
         padding: 20px;
         text-align: center;
         height: 125px;
-        width: 468px;
+        width: 268px;
         position: absolute;
         left: 10px;
         bottom: 50px;
