@@ -167,6 +167,14 @@ background-color: #000;
         position: absolute;
     }
 
+    .h3 {
+        background-color: #000;
+        position: fixed;
+        font-size: 15px;
+        height: 15px;
+        width: 200px;
+        }
+
     .button {
         background-color: #002e1e;
         border: none;
