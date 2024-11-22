@@ -151,7 +151,7 @@ background-color: #000;
         margin: 10px auto; 
         padding: 20px;
         height: 10px;
-        width: 350px;
+        width: 250px;
     }
 
     .answer-box {
@@ -163,7 +163,7 @@ background-color: #000;
         padding: 20px;
         text-align: center;
         height: 125px;
-        width: 268px;
+        width: 168px;
         position: absolute;
         left: 10px;
         bottom: 50px;
