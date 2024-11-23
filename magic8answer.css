@@ -150,13 +150,14 @@ background-color: #000;
 
 
     .senses {
+        background-color: transparent;
         border-radius: 20px;
         border: 3px dotted hsl(115, 100%, 93%);
         position: absolute;
         margin: 10px auto; 
         height: 1px;
         width: 300px;
-        top: 80px;
+        top: 85px;
     }
 
     .answer-box {
