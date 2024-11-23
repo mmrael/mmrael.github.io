@@ -149,9 +149,9 @@ background-color: #000;
         border-color: #000;
         position: absolute;
         margin: 10px auto; 
-        height: 10px;
+        height: 1px;
         width: 300px;
-        top: 70px;
+        top: 80px;
     }
 
     .answer-box {
