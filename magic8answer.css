@@ -143,6 +143,11 @@ background-color: #000;
       background-color: #000; 
     }
 
+    h1 {
+        font-family: cursive;
+        font-size: 40px;
+    }
+
 
     .senses {
         border-radius: 20px;
