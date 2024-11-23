@@ -151,7 +151,7 @@ background-color: #000;
 
     .senses {
         border-radius: 20px;
-        border-color: #000;
+        border: 3px dotted hsl(115, 100%, 93%);
         position: absolute;
         margin: 10px auto; 
         height: 1px;
