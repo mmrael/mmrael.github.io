@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie Clock</title>
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎞️</text></svg>"
+		/>
+
+        <style>
+			* {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			body {
+				background-color: #000000;
+				min-height: 100vh;
+				margin: 0;
+				display: grid;
+				place-content: center;
+				align-items: center;
+			}
+
+			.clock {
+				font-family: cursive;
+				color: #ffffff;
+				background-color: #000;
+				font-size: 100px;
+				font-weight: bold;
+				letter-spacing: -0.03em;
+				display: flex;
+				place-items: center;
+				gap: 10px;
+				opacity: 0;
+				border-radius: 12px; 
+				padding: 15px;
+				transition: 500ms;
+			
+			}
+
+			.clock:hover {
+					opacity: 1;
+			}
+
+			#ampm {
+				font-size: 46px;
+			}
+
+            #message {
+                font-size: 48px;
+                font-family: cursive;
+				font-weight: bold;
+            }
+
+
+            .morning {
+				background: url(https://i.imgur.com/KAM9pKS.png);
+				background-color: palevioletred;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: palevioletred;
+			}
+
+			.afternoon {
+				background: url(https://i.imgur.com/O1OtKU5.png);
+				background-color:#000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: teal;
+			}
+
+			.evening {
+				background: url(https://i.imgur.com/XglN4pO.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: plum;
+			}
+
+            .midnight {
+                background: url(https://i.imgur.com/BAqufV4.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+                color: #ffe657;
+            }
+
+			.late {
+				background: url(https://i.imgur.com/A79zUzF.png);
+				background-color: #000;
+				background-position: center;
+        color: #ffe657;
+			}
+
+			@media (max-width: 768px) {
+			.clock {
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+        <div id="message">Hello!</div>
+
+		<div class="clock">
+
+			<div id="hour"></div>
+			<div class="colon">:</div>
+			<div id="minute"></div>
+			<div class="colon">:</div>
+			<div id="second"></div>
+			<div id="ampm"></div>
+		</div>
+
+		<script>
+			const hourText = document.getElementById("hour");
+			const minuteText = document.getElementById("minute");
+      const secondText = document.getElementById("second");
+			const ampmText = document.getElementById("ampm");
+            const messageText = document.getElementById("message");
+
+			function updateClock() {
+				let date = new Date();
+				let hours = date.getHours();
+				let minutes = date.getMinutes();
+				let seconds = date.getSeconds();
+
+                                    // Temporary troubleshooting - un-comment to write specific data for testing
+ // hours = 21;
+  	// minutes = 14;
+  	// seconds = 33;
+
+                if (hours >= 5 && hours < 12) {
+  messageText.textContent = "☕️";
+  document.body.className = "morning";
+} else if (hours >= 12 && hours < 17) {
+  messageText.textContent = "🌴";
+  document.body.className = "afternoon";
+} else if (hours >= 17 && hours < 21) {
+  messageText.textContent = "🌅";
+  document.body.className = "evening";
+} else if (hours === 0) {
+  messageText.textContent = "🌙";
+  document.body.className = "midnight";
+} else {
+  messageText.textContent = "🌙";
+  document.body.className = "late";
+}
+
+
+
+				// Set AM/PM
+				let ampm;
+				if (hours >= 12) {
+					ampm = "PM";
+				} else {
+					ampm = "AM";
+				}
+
+				// Convert to 12-hour format
+				if (hours > 12) {
+					hours = hours - 12;
+				}
+				if (hours === 0) {
+					hours = 12;
+				}
+
+				// Add leading zero to hours - optional
+				if (hours < 10) {
+					hours = "0" + hours;
+				}
+
+				// Add leading zero to minutes - optional
+				if (minutes < 10) {
+					minutes = "0" + minutes;
+				}
+
+				// Add leading zero to seconds - optional
+				if (seconds < 10) {
+					seconds = "0" + seconds;
+				}
+
+				hourText.textContent = hours;
+				minuteText.textContent = minutes;
+        secondText.textContent = seconds;
+				ampmText.textContent = ampm;
+			}
+
+			// Update clock immediately and then every second
+			updateClock();
+			setInterval(updateClock, 1000);
+
+
+
+		</script>
+
+
+
+		</body>
+</html>
