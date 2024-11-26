@@ -83,16 +83,27 @@
 
 }
 
+			.lateafternoon .clock {
+				position: fixed;
+				left: 420px;
+				top: 450px;
+				color: hsl(113, 18%, 90%);
+			}
+
 			.twelve {
-				background: url(https://i.imgur.com/al4cHCX.png);
+				background: url(https://i.imgur.com/eqNKYZ6.png);
 				background-color: #000;
 				background-position: center;
 				background-repeat: no-repeat;
 				color: teal;
 }
 
+			.twelve:hover {
+				filter: blur(1px);
+			}
+
 			.afternoon {
-				background: url(https://i.imgur.com/JkHRXgz.png);
+				background: url(https://i.imgur.com/eqNKYZ6.png);
 				background-color: #000;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -101,7 +112,7 @@
 			}
 
 			.afternoon:hover {
-				filter: blur(2px);
+				filter: blur(1px);
 
 			}
 
@@ -125,6 +136,12 @@
 				color: plum;
 			}
 
+			.ten .clock {
+				position: fixed;
+				left: 200px;
+				top: 30px;
+			}
+
             .midnight {
                 background: url(https://i.imgur.com/BAqufV4.png);
 				background-color: #000;
@@ -132,6 +149,15 @@
 				background-repeat: no-repeat;
                 color: #ffe657;
             }
+
+			.midnight .clock {
+				color: #000;
+				font-size: 175px;
+				background: none;
+				position: fixed;
+				top: 30px;
+				left: 450px;
+			}
 
 			.oneam {
 				background: url(https://i.imgur.com/thc8mAm.png);
@@ -157,6 +183,14 @@
                 color: #000;
 			}
 
+			.threeam .clock {
+				font-size: 65px;
+				background: none;
+				position: fixed;
+				top: 200px;
+				left: 625px;
+			}
+
 			.fouram {
 				background: url(https://www.film-rezensionen.de/wp-content/uploads/2008/11/Suspiria-Frontpage.jpg);
 				background-color: #000;
@@ -167,10 +201,13 @@
 
 			.fouram .clock {
 				background: url(https://i.imgur.com/rW1r1Ny.png);
+				font-size: 200px;
 			}
 
 			.fouram:hover {
-			filter: blur(6px);
+			background: none;
+			background-color: #000;
+			filter: blur(2px);
 			}
 
 			.fiveam {
@@ -182,15 +219,28 @@
 
 			}
 
+			.fiveam .clock {
+				background: none;
+				font-size: 250px;
+			}
+
 			.fiveam:hover {
 			filter: blur(5px);
 			}
 
 			.late {
-				background: url(https://i.imgur.com/A79zUzF.png);
+				background: url(https://i.imgur.com/3MqinVw.png);
 				background-color: #000;
 				background-position: center;
         color: #ffe657;
+			}
+
+			.late .clock {
+				background: url(https://i.imgur.com/m0eDrXi.png);
+				background-position: center;
+				position: fixed;
+				left: 30px;
+				top: 30px;
 			}
 
 			@media (max-width: 768px) {
@@ -228,12 +278,12 @@
 				let seconds = date.getSeconds();
 
                                     // Temporary troubleshooting - un-comment to write specific data for testing
-   hours = 12;
+ // hours = 4;
   	// minutes = 14;
   	// seconds = 33;
 
                 if (hours === 5) {
-					messageText.textContent = "☕️";
+					messageText.textContent = "";
 					document.body.className = "fiveam";	
 			} else if (hours >= 6 && hours < 12) {
   messageText.textContent = "☕️";
@@ -245,32 +295,32 @@
   messageText.textContent = "🌴";
   document.body.className = "afternoon";
 } else if (hours >= 14 && hours < 17) {
-	messageText.textContent = "?";
+	messageText.textContent = "";
 	document.body.className = "lateafternoon";
-} else if (hours >= 17 && hours < 20) {
+} else if (hours >= 17 && hours < 21) {
   messageText.textContent = "🌅";
   document.body.className = "evening";
-} else if (hours === 20) {
+} else if (hours === 21) {
   messageText.textContent = "🌙";
+  document.body.className = "late";
+} else if (hours >= 22) {
+  messageText.textContent = "";
   document.body.className = "ten";
 } else if (hours === 0) {
   messageText.textContent = "🌙";
   document.body.className = "midnight";
 } else if (hours === 1) {
-	messageText.textContent = "!";
+	messageText.textContent = "";
 	document.body.className = "oneam";
 } else if (hours === 2) {
-	messageText.textContent = "!";
+	messageText.textContent = "";
 	document.body.className = "twoam";
 } else if (hours === 3) {
 	messageText.textContent = "!";
 	document.body.className = "threeam";
 } else if (hours === 4) {
-	messageText.textContent = "!";
+	messageText.textContent = "";
 	document.body.className = "fouram";
-} else {
-  messageText.textContent = "🌙";
-  document.body.className = "late";
 }
 
 
