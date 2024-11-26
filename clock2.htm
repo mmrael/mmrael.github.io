@@ -63,16 +63,62 @@
 				color: palevioletred;
 			}
 
-			.afternoon {
+			.morning .clock {
+				background: none;
+			}
+
+			.morning:hover {
+    			filter: blur(3px);
+}
+
+			.lateafternoon {
 				background: url(https://i.imgur.com/O1OtKU5.png);
 				background-color:#000;
 				background-position: center;
 				background-repeat: no-repeat;
 				color: teal;
 			}
+			.lateafternoon:hover {
+    			filter: blur(2px);
+
+}
+
+			.twelve {
+				background: url(https://i.imgur.com/al4cHCX.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: teal;
+}
+
+			.afternoon {
+				background: url(https://i.imgur.com/JkHRXgz.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: teal;
+
+			}
+
+			.afternoon:hover {
+				filter: blur(2px);
+
+			}
 
 			.evening {
-				background: url(https://i.imgur.com/XglN4pO.png);
+				background: url(https://i.imgur.com/NZGn9P7.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: plum;
+			}
+
+			.evening .clock {
+				background: url(https://i0.wp.com/img.screencaps.us/199/2-aladdin/full/aladdin-disneyscreencaps.com-6479.jpg?ssl=1);
+			}
+
+			.ten {
+				background: url(https://i.imgur.com/MWP9Sy4.png);
 				background-color: #000;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -86,6 +132,59 @@
 				background-repeat: no-repeat;
                 color: #ffe657;
             }
+
+			.oneam {
+				background: url(https://i.imgur.com/thc8mAm.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+                color: #ffe657;
+			}
+
+			.twoam {
+				background: url(https://i.imgur.com/X6ewd5W.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+                color: #ffe657;
+			}
+
+			.threeam {
+				background: url(https://i.imgur.com/qq64Cyk.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+                color: #000;
+			}
+
+			.fouram {
+				background: url(https://www.film-rezensionen.de/wp-content/uploads/2008/11/Suspiria-Frontpage.jpg);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: #000;
+			}
+
+			.fouram .clock {
+				background: url(https://i.imgur.com/rW1r1Ny.png);
+			}
+
+			.fouram:hover {
+			filter: blur(6px);
+			}
+
+			.fiveam {
+				background: url(https://i.imgur.com/dAQhdYL.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: #000;
+
+			}
+
+			.fiveam:hover {
+			filter: blur(5px);
+			}
 
 			.late {
 				background: url(https://i.imgur.com/A79zUzF.png);
@@ -129,22 +228,46 @@
 				let seconds = date.getSeconds();
 
                                     // Temporary troubleshooting - un-comment to write specific data for testing
- // hours = 21;
+   hours = 12;
   	// minutes = 14;
   	// seconds = 33;
 
-                if (hours >= 5 && hours < 12) {
+                if (hours === 5) {
+					messageText.textContent = "☕️";
+					document.body.className = "fiveam";	
+			} else if (hours >= 6 && hours < 12) {
   messageText.textContent = "☕️";
   document.body.className = "morning";
-} else if (hours >= 12 && hours < 17) {
+} else if (hours === 12) {
+	messageText.textContent = "🌴";
+	document.body.className = "twelve";
+} else if (hours >= 13 && hours < 14) {
   messageText.textContent = "🌴";
   document.body.className = "afternoon";
-} else if (hours >= 17 && hours < 21) {
+} else if (hours >= 14 && hours < 17) {
+	messageText.textContent = "?";
+	document.body.className = "lateafternoon";
+} else if (hours >= 17 && hours < 20) {
   messageText.textContent = "🌅";
   document.body.className = "evening";
+} else if (hours === 20) {
+  messageText.textContent = "🌙";
+  document.body.className = "ten";
 } else if (hours === 0) {
   messageText.textContent = "🌙";
   document.body.className = "midnight";
+} else if (hours === 1) {
+	messageText.textContent = "!";
+	document.body.className = "oneam";
+} else if (hours === 2) {
+	messageText.textContent = "!";
+	document.body.className = "twoam";
+} else if (hours === 3) {
+	messageText.textContent = "!";
+	document.body.className = "threeam";
+} else if (hours === 4) {
+	messageText.textContent = "!";
+	document.body.className = "fouram";
 } else {
   messageText.textContent = "🌙";
   document.body.className = "late";
