@@ -71,6 +71,22 @@
     			filter: blur(3px);
 }
 
+			.latemorning {
+				background: url(https://i.imgur.com/KAM9pKS.png);
+				background-color: palevioletred;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: palevioletred;
+			}
+
+			.latemorning .clock {
+				background: none;
+			}
+
+			.latemorning:hover {
+    			filter: blur(2px);
+}
+
 			.lateafternoon {
 				background: url(https://i.imgur.com/O1OtKU5.png);
 				background-color:#000;
@@ -128,6 +144,23 @@
 				background: url(https://i0.wp.com/img.screencaps.us/199/2-aladdin/full/aladdin-disneyscreencaps.com-6479.jpg?ssl=1);
 			}
 
+			.lateevening {
+				background: url(https://i.imgur.com/7UYeuHM.png);
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: plum;
+			}
+
+			.lateevening .clock {
+				background: none;
+				color: hsla(352, 100%, 59%, 0.793);
+				font-size: 75px;
+				position: fixed;
+				right: 400px;
+				bottom: 225px;
+			}
+
 			.ten {
 				background: url(https://i.imgur.com/MWP9Sy4.png);
 				background-color: #000;
@@ -173,6 +206,10 @@
 				background-position: center;
 				background-repeat: no-repeat;
                 color: #ffe657;
+			}
+
+			.twoam .clock {
+				font-size: 125px;
 			}
 
 			.threeam {
@@ -278,16 +315,19 @@
 				let seconds = date.getSeconds();
 
                                     // Temporary troubleshooting - un-comment to write specific data for testing
- // hours = 4;
+ // hours = 10;
   	// minutes = 14;
   	// seconds = 33;
 
                 if (hours === 5) {
 					messageText.textContent = "";
 					document.body.className = "fiveam";	
-			} else if (hours >= 6 && hours < 12) {
-  messageText.textContent = "☕️";
+			} else if (hours >= 6 && hours < 10) {
+  messageText.textContent = "⚪️";
   document.body.className = "morning";
+} else if (hours >= 10 && hours < 12) {
+  messageText.textContent = "⚪️";
+  document.body.className = "latemorning";
 } else if (hours === 12) {
 	messageText.textContent = "🌴";
 	document.body.className = "twelve";
@@ -297,9 +337,12 @@
 } else if (hours >= 14 && hours < 17) {
 	messageText.textContent = "";
 	document.body.className = "lateafternoon";
-} else if (hours >= 17 && hours < 21) {
-  messageText.textContent = "🌅";
+} else if (hours >= 17 && hours < 19) {
+  messageText.textContent = "🔸";
   document.body.className = "evening";
+} else if (hours >= 19 && hours < 21) {
+  messageText.textContent = "🟣";
+  document.body.className = "lateevening";
 } else if (hours === 21) {
   messageText.textContent = "🌙";
   document.body.className = "late";
