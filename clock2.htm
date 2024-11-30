@@ -72,19 +72,23 @@
 }
 
 			.latemorning {
-				background: url(https://i.imgur.com/KAM9pKS.png);
-				background-color: palevioletred;
+				background: url(https://i.imgur.com/VDbcAfp.png);
+				background-color: hsl(238, 97%, 87%);
 				background-position: center;
 				background-repeat: no-repeat;
-				color: palevioletred;
+				color: hsl(238, 97%, 87%);
 			}
 
 			.latemorning .clock {
 				background: none;
+				position: fixed;
+				left: 200px;
+				top: 30px;
+			
 			}
 
 			.latemorning:hover {
-    			filter: blur(2px);
+    			filter: blur(1px);
 }
 
 			.lateafternoon {
@@ -118,6 +122,13 @@
 				filter: blur(1px);
 			}
 
+			.twelve .clock {
+				position: fixed;
+				top: 50px;
+				right: 175px;
+			}
+
+
 			.afternoon {
 				background: url(https://i.imgur.com/eqNKYZ6.png);
 				background-color: #000;
@@ -130,6 +141,12 @@
 			.afternoon:hover {
 				filter: blur(1px);
 
+			}
+
+			.afternoon .clock {
+				position: fixed;
+				top: 50px;
+				right: 175px;
 			}
 
 			.evening {
@@ -266,7 +283,7 @@
 			}
 
 			.late {
-				background: url(https://i.imgur.com/3MqinVw.png);
+				background: url(https://i.imgur.com/Pq7WFLf.png);
 				background-color: #000;
 				background-position: center;
         color: #ffe657;
@@ -315,24 +332,24 @@
 				let seconds = date.getSeconds();
 
                                     // Temporary troubleshooting - un-comment to write specific data for testing
- // hours = 13;
+ hours = 9;
   	// minutes = 14;
   	// seconds = 33;
 
                 if (hours === 5) {
 					messageText.textContent = "";
 					document.body.className = "fiveam";	
-			} else if (hours >= 6 && hours < 10) {
+			} else if (hours >= 6 && hours < 9) {
   messageText.textContent = "⚪️";
   document.body.className = "morning";
-} else if (hours >= 10 && hours < 12) {
+} else if (hours >= 9 && hours < 12) {
   messageText.textContent = "⚪️";
   document.body.className = "latemorning";
 } else if (hours === 12) {
 	messageText.textContent = "🌴";
 	document.body.className = "twelve";
 } else if (hours >= 13 && hours < 14) {
-  messageText.textContent = "🌴";
+  messageText.textContent = "";
   document.body.className = "afternoon";
 } else if (hours >= 14 && hours < 17) {
 	messageText.textContent = "";
