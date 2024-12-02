@@ -72,7 +72,7 @@
 }
 
 			.latemorning {
-				background: url(https://i.imgur.com/VDbcAfp.png);
+				background: url(https://i.imgur.com/DIIPkqS.png);
 				background-color: hsl(238, 97%, 87%);
 				background-position: center;
 				background-repeat: no-repeat;
@@ -80,6 +80,7 @@
 			}
 
 			.latemorning .clock {
+				color: #000054;
 				background: none;
 				position: fixed;
 				left: 200px;
@@ -209,6 +210,29 @@
 				left: 450px;
 			}
 
+			.midnightt {
+				background-color: #000;
+				background-position: center;
+				background-repeat: no-repeat;
+                color: #fff;
+			
+			}
+
+			.midnightt .clock {
+				color: #fff;
+				font-size: 175px;
+				background: none;
+				position: fixed;
+				top: 30px;
+				left: 415px;
+
+			}
+
+			.midnightt #message {
+				font-size: 25px;
+				font-style: italic;
+			}
+
 			.oneam {
 				background: url(https://i.imgur.com/thc8mAm.png);
 				background-color: #000;
@@ -332,8 +356,8 @@
 				let seconds = date.getSeconds();
 
                                     // Temporary troubleshooting - un-comment to write specific data for testing
- // hours = 9;
-  	// minutes = 14;
+hours = 0;
+	// minutes = 0;
   	// seconds = 33;
 
                 if (hours === 5) {
@@ -366,7 +390,7 @@
 } else if (hours >= 22) {
   messageText.textContent = "";
   document.body.className = "ten";
-} else if (hours === 0) {
+} else if (hours === 0 && minutes > 0) {
   messageText.textContent = "🌙";
   document.body.className = "midnight";
 } else if (hours === 1) {
@@ -381,6 +405,9 @@
 } else if (hours === 4) {
 	messageText.textContent = "";
 	document.body.className = "fouram";
+} else if (hours === 0 && minutes === 0) {
+	messageText.textContent = "There's nothing else. Just us, the cameras, and those wonderful people out there in the dark.";
+	document.body.className = "midnightt";
 }
 
 
