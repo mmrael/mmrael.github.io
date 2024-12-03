@@ -73,10 +73,11 @@
 
 			.latemorning {
 				background: url(https://i.imgur.com/DIIPkqS.png);
-				background-color: hsl(238, 97%, 87%);
+				background-color: #98b5ff;
 				background-position: center;
 				background-repeat: no-repeat;
 				color: hsl(238, 97%, 87%);
+				cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>☁️</text></svg>") 16 0,auto; /*!emojicursor.app*/
 			}
 
 			.latemorning .clock {
@@ -98,6 +99,7 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				color: teal;
+				cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🌴</text></svg>") 16 0,auto; /*!emojicursor.app*/
 			}
 			.lateafternoon:hover {
     			filter: blur(2px);
@@ -117,6 +119,7 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				color: teal;
+				cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🌴</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 			.twelve:hover {
@@ -136,7 +139,7 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				color: teal;
-
+				cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🌴</text></svg>") 16 0,auto; /*!emojicursor.app*/
 			}
 
 			.afternoon:hover {
@@ -156,6 +159,7 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				color: plum;
+				cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🔸</text></svg>") 16 0,auto; /*!emojicursor.app*/
 			}
 
 			.evening .clock {
@@ -169,8 +173,9 @@
 				background-repeat: no-repeat;
 				background-size: 100vw 100vh;
 				color: plum;
-				cursor: url('https://em-content.zobj.net/source/apple/391/large-purple-circle_1f7e3.png'), auto;
-			}
+			cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🟣</text></svg>") 16 0,auto; /*!emojicursor.app*/
+
+		}
 
 			.lateevening .clock {
 				background: none;
@@ -313,6 +318,7 @@
 				background-color: #000;
 				background-position: center;
         color: #ffe657;
+		cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='60' height='72' viewport='0 0 100 100' style='fill:black;font-size:36px;'><text y='50%'>🌙</text></svg>") 16 0,auto; /*!emojicursor.app*/
 			}
 
 			.late .clock {
@@ -358,7 +364,7 @@
 				let seconds = date.getSeconds();
 
                                     // Temporary troubleshooting - un-comment to write specific data for testing
-// hours = 0;
+ // hours = 21;
 	// minutes = 0;
   	// seconds = 33;
 
@@ -369,10 +375,10 @@
   messageText.textContent = "⚪️";
   document.body.className = "morning";
 } else if (hours >= 9 && hours < 12) {
-  messageText.textContent = "⚪️";
+  messageText.textContent = "";
   document.body.className = "latemorning";
 } else if (hours === 12) {
-	messageText.textContent = "🌴";
+	messageText.textContent = "";
 	document.body.className = "twelve";
 } else if (hours >= 13 && hours < 14) {
   messageText.textContent = "";
@@ -384,10 +390,10 @@
   messageText.textContent = "🔸";
   document.body.className = "evening";
 } else if (hours >= 19 && hours < 21) {
-  messageText.textContent = "🟣";
+  messageText.textContent = "";
   document.body.className = "lateevening";
 } else if (hours === 21) {
-  messageText.textContent = "🌙";
+  messageText.textContent = "";
   document.body.className = "late";
 } else if (hours >= 22) {
   messageText.textContent = "";
