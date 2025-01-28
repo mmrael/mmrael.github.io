@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖤  The Haunted Mansion</title>
+
+    <link rel="stylesheet" type="text/css" href="welcome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    @media (max-width: 768px) {
+    body {
+      background-color: #000; 
+    }
+    }
+</style>
+<body>
+    <main><BR><BR><BR><BR><BR><BR>
+        <center>
+<a href="home.html">
+        <h1><div class="question-box"></div></a>
+    </h1></center>
+<BR><BR><BR><BR><BR><BR><BR><BR>
+    <BR><BR>
+        <BR><BR>
+            <BR><BR>
+
+
+    <a href="index.html#header"><div class="my-container">← Back to homepage</div></a>
+</main>
+
+<script type="text/javascript">
+    let question = ["Would you like to take a drive?", "Don't be shy.", "Abandon all hope, ye who enter here.", "Don't be afraid.", "Step closer, friend.", "Well, come on.", "Step forward."];
+    let randomQuestion = Math.floor(Math.random() * question.length);
+    let questionBox = document.querySelector(".question-box");
+    window.addEventListener("load", () => {
+questionBox.textContent = question[randomQuestion];
+
+    });
+
+
+
+</script>
+
+
+
+
+
+    </html>

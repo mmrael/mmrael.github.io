@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:#002e1e;
+}
+
+a {
+    color: hsl(0 0% 100%);
+
+
+}
+
+a:hover {
+    color: black;
+    transition: 200ms;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.link-container {
+    background-color: #790101;
+}
+
+.my-container {
+    background-color: #790101;
+}
+
+

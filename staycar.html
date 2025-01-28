@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="rain-container"></div>
 <BR><BR>
     You sit in the car. Rain pounds on the metal roof. The wind screeches and hurls branches against your vehicle. <BR><BR>
         You think you see something appear in the window right next to you -- but just as quickly, it vanishes.<BR><BR>
@@ -19,5 +20,18 @@
  
                 <a href="walkhelp.html" class="link-container">Run from the car.</a><BR><BR>
                     <a href="nothanks.html" class="link-container">No thanks, I'm staying right here.</a>
+
+                    <script type="text/javascript">
+                        const rainContainer = document.querySelector('.rain-container');
+                        const numDrops = 100; // Adjust the number of raindrops
+                        
+                        for (let i = 0; i < numDrops; i++) {
+                          const drop = document.createElement('div');
+                          drop.classList.add('drop');
+                          drop.style.left = `${Math.random() * 100}%`;
+                          drop.style.animationDelay = `${Math.random() * 2}s`;
+                          rainContainer.appendChild(drop);
+                        }
+                                </script>
                     </body>
                     </html>

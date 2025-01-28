@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="rain-container"></div>
     <center><h1><b>~ The Haunted House ~</b></h1></center>
 
     <h2>The night is dark.</h2> 
@@ -23,13 +25,25 @@
 
                 <a href="continue.html" class="link-container">Continue down the road.</a><BR><BR>
                     <a href="staycar.html" class="link-container">Pull over and wait out the storm.</a><BR><BR>
-                        <center><a href="index.html"><img src="http://www.clker.com/cliparts/L/N/U/m/A/J/black-divider-no-background-hi.png" width="25%"></a></center>
+                        <center><a href="index.html"><img src="http://i.imgur.com/ue2xalv.png" width="25%"></a></center>
 <BR><BR>
                         <center>
                         <a href="index.html"><div class="my-container">Back to ~ Madeline's Portal ~
                         </div></a>
                         </body></center>
+                        
+                        <script type="text/javascript">
+const rainContainer = document.querySelector('.rain-container');
+const numDrops = 100; // Adjust the number of raindrops
 
+for (let i = 0; i < numDrops; i++) {
+  const drop = document.createElement('div');
+  drop.classList.add('drop');
+  drop.style.left = `${Math.random() * 100}%`;
+  drop.style.animationDelay = `${Math.random() * 2}s`;
+  rainContainer.appendChild(drop);
+}
+        </script>
 
     </body>
     </html>
