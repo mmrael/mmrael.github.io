@@ -12,6 +12,8 @@
 </head>
 <body>
 
+    <div class="rain-container"></div>
+
     <h2>You find a cobblestone path winding through gnarled trees.</h2>
 
     A steep hill creeps up to a dark, old house. It watches your approach.<BR><BR>
@@ -22,5 +24,18 @@
                 <a href="pullover.html" class="link-container">Run back to the car.</a><BR><BR>
                     <a href="continuepath.html" class="link-container">Continue along the path, avoiding the old house.</a>
            
+
+                    <script type="text/javascript">
+                        const rainContainer = document.querySelector('.rain-container');
+                        const numDrops = 100; // Adjust the number of raindrops
+                        
+                        for (let i = 0; i < numDrops; i++) {
+                          const drop = document.createElement('div');
+                          drop.classList.add('drop');
+                          drop.style.left = `${Math.random() * 100}%`;
+                          drop.style.animationDelay = `${Math.random() * 2}s`;
+                          rainContainer.appendChild(drop);
+                        }
+                                </script>
                     </body>
                     </html>

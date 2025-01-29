@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="rain-container"></div>
 
     <h2>You approach the foreboding entrance to the old house.</h2>
     The wooden door towers over you. You notice it appears to be slightly ajar and looks like it could be pushed open.<BR><BR>
@@ -18,5 +19,18 @@
             <a href="bushes2.html" class="link-container">Investigate the noise in the bushes.</a><BR><BR>
                 <a href="pushopen.html" class="link-container">Push open the door and walk in.</a><BR><BR>
                     <a href="knock.html" class="link-container">Knock on the door.</a>
-                    </body>
+                    
+                    <script type="text/javascript">
+                        const rainContainer = document.querySelector('.rain-container');
+                        const numDrops = 100; // Adjust the number of raindrops
+                        
+                        for (let i = 0; i < numDrops; i++) {
+                          const drop = document.createElement('div');
+                          drop.classList.add('drop');
+                          drop.style.left = `${Math.random() * 100}%`;
+                          drop.style.animationDelay = `${Math.random() * 2}s`;
+                          rainContainer.appendChild(drop);
+                        }
+                                </script>
+                </body>
                     </html>

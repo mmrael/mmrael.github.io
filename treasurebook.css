@@ -6,12 +6,18 @@ body {
     font-weight: 400;
     font-style: normal;
     color:#002e1e;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔥</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 a {
-    color: hwb(0 0% 37%);
+    color: hsl(0 0% 100%);
 
 
+}
+
+a:hover {
+    color: #790101;
+    transition: 500ms;
 }
 
 h1 {
@@ -24,9 +30,42 @@ h2 {
     font-size: 30px;
 }
 
-.my-container {
-    background-color: hsl(0, 0%, 100%);
+.link-container {
+    background-color: #790101;
 }
+
+.my-container {
+    background-color: #790101;
+}
+
+.rain-container {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 5px;
+    background-color: hsl(0, 0%, 65%);
+  }
+  
+  .drop {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: #fff;
+    animation: fall 1s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+
+
+
 
 
 

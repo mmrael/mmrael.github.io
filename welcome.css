@@ -9,13 +9,13 @@ body {
 }
 
 a {
-    color: hsl(0 0% 100%);
+    color: #e50000;
 
 
 }
 
 a:hover {
-    color: black;
+    color: white;
     transition: 200ms;
 }
 
@@ -35,5 +35,68 @@ h2 {
 .my-container {
     background-color: #790101;
 }
+
+.my-container a {
+    color: white;
+}
+
+.signchainleft {
+    color: black;
+    background-color: black;
+    border: 15px dashed gray;
+    position: fixed;
+    height: 1px;
+    width: 200px;
+    top: 300px;
+    left: 250px;
+
+
+}
+
+.chainleft {
+    color: black;
+    background-color: black;
+    border: 15px dashed gray;
+    position: fixed;
+    height: 200px;
+    width: 1px;
+    top: 5px;
+    left: 250px;
+}
+
+.signchainright {
+    color: black;
+    background-color: black;
+    border: 15px dashed gray;
+    position: fixed;
+    height: 1px;
+    width: 200px;
+    top: 300px;
+    right: 250px;
+
+}
+
+.chainright {
+    color: black;
+    background-color: black;
+    border: 15px dashed gray;
+    position: fixed;
+    height: 200px;
+    width: 1px;
+    top: 5px;
+    right: 250px;
+}
+
+.question-box {
+    position: center;
+    background: url('https://plus.unsplash.com/premium_photo-1675782999354-2f2711e437a5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2xkJTIwd29vZHxlbnwwfHwwfHx8MA%3D%3D'); 
+    background-position: bottom;
+    background-color: hsl(23, 89%, 19%);
+    height: 200px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+
 
 

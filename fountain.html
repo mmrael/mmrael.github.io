@@ -11,12 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<div class="rain-container"></div>
     <h2>As you investigate the fountain, you figure that it must once have been a rather elegant fountain.</h2>
     But that time has long since passed. <BR><BR>
     You gaze into the murky depths. <i>Is something moving...?</i> No, you're just seeing things. <i>Right?</i><BR><BR>
     <a href="lean.html" class="link-container">You lean over... closer... closer...</a><br><BR>
         <BR><BR>
 
+            <script type="text/javascript">
+                const rainContainer = document.querySelector('.rain-container');
+                const numDrops = 100; // Adjust the number of raindrops
+                
+                for (let i = 0; i < numDrops; i++) {
+                  const drop = document.createElement('div');
+                  drop.classList.add('drop');
+                  drop.style.left = `${Math.random() * 100}%`;
+                  drop.style.animationDelay = `${Math.random() * 2}s`;
+                  rainContainer.appendChild(drop);
+                }
+                        </script>
                 </body>
                 </html>

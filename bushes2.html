@@ -11,11 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="rain-container"></div>
     <h2>Peering into the bushes, you discover a trapdoor and steps descending into a cellar below.</h2>
     Rainwater cascades down upon you from the rooftop above.<BR><BR>
         <a href="pushopen.html" class="link-container">Walk through the front door of the old house.</a><BR><BR>
             <a href="knock.html" class="link-container">Knock on the door of the old house.</a><BR><BR>
                 <a href="cellar2.html" class="link-container">Descend the steps to the cellar.</a><BR><BR>
                     <a href="backyard.html" class="link-container">Go into the backyard.</a></body></div>
-                    </body>
+                    
+                    <script type="text/javascript">
+                        const rainContainer = document.querySelector('.rain-container');
+                        const numDrops = 100; // Adjust the number of raindrops
+                        
+                        for (let i = 0; i < numDrops; i++) {
+                          const drop = document.createElement('div');
+                          drop.classList.add('drop');
+                          drop.style.left = `${Math.random() * 100}%`;
+                          drop.style.animationDelay = `${Math.random() * 2}s`;
+                          rainContainer.appendChild(drop);
+                        }
+                                </script>
+                </body>
                     </html>

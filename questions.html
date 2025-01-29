@@ -12,10 +12,26 @@
 </head>
 <body>
 
+    <div class="rain-container"></div>
+
     <h2>You keep asking the woman questions, but she is hysterical.</h2>
     She mutters something about demons in the old house. She warns you:<BR><BR>
         <i>"Never walk into the shadows... If you do, they will get you... They live in the shadows."</i><BR><BR>
             <a href="pullover.html" class="link-container">Go back to the car and wait for the authorities to arrive.</a><BR><BR>
                 <a href="pathhouse2.html" class="link-container">Head up to the house to look for the woman's dog.</a>
-                </body>
+               
+            
+                <script type="text/javascript">
+                    const rainContainer = document.querySelector('.rain-container');
+                    const numDrops = 100; // Adjust the number of raindrops
+                    
+                    for (let i = 0; i < numDrops; i++) {
+                      const drop = document.createElement('div');
+                      drop.classList.add('drop');
+                      drop.style.left = `${Math.random() * 100}%`;
+                      drop.style.animationDelay = `${Math.random() * 2}s`;
+                      rainContainer.appendChild(drop);
+                    }
+                            </script>
+            </body>
 </html>
