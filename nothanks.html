@@ -11,8 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="rain-container"></div>
 <BR><BR>
     As you sit in the car, the scraping sound gets louder... and louder...<BR><BR>
         <a href="home.html" class="link-container">I'm feeling braver. Let me try again.</a>
+
+        <script type="text/javascript">
+            const rainContainer = document.querySelector('.rain-container');
+            const numDrops = 100; // Adjust the number of raindrops
+            
+            for (let i = 0; i < numDrops; i++) {
+              const drop = document.createElement('div');
+              drop.classList.add('drop');
+              drop.style.left = `${Math.random() * 100}%`;
+              drop.style.animationDelay = `${Math.random() * 2}s`;
+              rainContainer.appendChild(drop);
+            }
+                    </script>
         </body>
         </html>
