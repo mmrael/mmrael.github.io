@@ -34,13 +34,13 @@
                         
                         <script type="text/javascript">
 const rainContainer = document.querySelector('.rain-container');
-const numDrops = 100; // Adjust the number of raindrops
+const numDrops = 100;
 
 for (let i = 0; i < numDrops; i++) {
   const drop = document.createElement('div');
   drop.classList.add('drop');
   drop.style.left = `${Math.random() * 100}%`;
-  drop.style.animationDelay = `${Math.random() * 2}s`;
+  drop.style.animationDelay = `${Math.random() * -2}s`;
   rainContainer.appendChild(drop);
 }
         </script>
