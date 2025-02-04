@@ -16,12 +16,12 @@ a {
 
 a:hover {
     color: white;
-    transition: 200ms;
+    transition: 500ms;
 }
 
 h1 {
     font-family: cursive;
-    font-size: 60px;
+    font-size: 55px;
 }
 
 h2 {
@@ -33,7 +33,11 @@ h2 {
 }
 
 .my-container {
+    position: fixed;
     background-color: #790101;
+    bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .my-container a {
@@ -88,10 +92,12 @@ h2 {
 }
 
 .question-box {
-    position: center;
+    position: fixed;
     background: url('https://plus.unsplash.com/premium_photo-1675782999354-2f2711e437a5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2xkJTIwd29vZHxlbnwwfHwwfHx8MA%3D%3D'); 
     background-position: bottom;
     background-color: hsl(23, 89%, 19%);
+    top: 200px;
+    left: 510px;
     height: 200px;
     width: 500px;
     border-radius: 5px;
