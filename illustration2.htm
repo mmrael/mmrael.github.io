@@ -24,7 +24,7 @@
     button {
         background-color: #000;
         padding: 15px;
-        border: 15px dotted rgb(0, 155, 163)
+        border: 1px dotted rgb(0, 155, 163)
     }
 
     h1 {
@@ -253,7 +253,7 @@ document.onmousemove=function(e){
       newDiv.style.height = makeRandomSize(min, max) + "px";
       newDiv.style.left = e.clientX + "px";
       newDiv.style.top = e.clientY + "px";
-      newDiv.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+      newDiv.style.transform = `translate(-50%, -50%)`;
       document.body.appendChild(newDiv);
       
       lastDrawTime = currentTime;
