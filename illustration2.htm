@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Immersive Tech Obscures Reality. AI Will Threaten It</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cookie&family=Fleur+De+Leah&family=Fontdiner+Swanky&family=Goudy+Bookletter+1911&family=Quicksand:wght@300..700&family=Silkscreen:wght@400;700&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+    body {
+        background-color: #000;
+        cursor: crosshair;
+    }
+    
+    a:hover{
+        cursor: crosshair;
+    }
+
+    button {
+        background-color: #000;
+        padding: 15px;
+        border: 15px dotted rgb(0, 155, 163)
+    }
+
+    h1 {
+        color: white;
+        font-family: "Chakra Petch", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 40px;
+
+    }
+
+    h2 {
+        color: white;
+        font-family: "Chakra Petch", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 120px;
+    }
+
+    .leftcircle {
+        position: fixed;
+        top: 210px;
+        left: 335px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%
+}
+
+.rightcircle {
+    position: fixed;
+        top: 210px;
+        right: 335px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%
+}
+
+
+
+.leftgoggle {
+        position: absolute;
+        top: 100px;
+        left: 185px;
+  width: 500px;
+  height: 500px;
+  background: hsl(0, 0%, 40%);
+  border-radius: 50%
+}
+
+
+
+.rightgoggle {
+    position: absolute;
+        top: 100px;
+        right: 185px;
+  width: 500px;
+  height: 500px;
+  background: hsl(0, 0%, 40%);
+  border-radius: 50%
+}
+
+
+.flag {
+      width: 500px;
+      height: 200px;
+      top: 200px;
+      left: 400px;
+      box-sizing: content-box;
+      padding-top: 15px;
+      position: absolute;
+      background: hsl(0, 0%, 40%);
+      color: white;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .flag:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 13px solid #eee;
+      border-left: 55px solid transparent;
+      border-right: 55px solid transparent;
+    }
+
+    .flag:hover {
+        background: #000;
+        transition: 200ms;
+    }
+
+    .goggles-box {
+        position: relative;
+    }
+
+    .goggles-box:hover .flag,
+.goggles-box:hover .leftgoggle,
+.goggles-box:hover .rightgoggle {  
+background-color:hsl(0, 0%, 0%);
+transition: 200ms;
+}
+  
+
+.shape {
+  background:rgb(0, 155, 163);
+  position:fixed;
+  transform:translate(-50%, -50%);
+  opacity:0.50;
+}
+
+.rain-container {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 5px;
+    background-color: hsl(0, 0%, 0%);
+  }
+  
+  .drop {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: hwb(183 0% 0%);
+    animation: fall 2s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+    </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="rain-container"></div>
+<BR><BR><BR><BR><BR>
+<div class="goggles-box">
+    <center>
+
+        <button onclick="typeWriter()">
+            <h1>Immersive Tech Obscures Reality...</h1> </button>
+          <h2>
+          <p id="demo"></p> 
+          </h2>
+    </center>
+
+</div>
+
+
+    
+
+
+
+
+
+
+<BR><BR>
+    <BR><BR>
+        <BR><BR>
+            <BR><BR>
+                <BR><BR>
+                    <BR><BR>
+                        <BR><BR>
+                            <BR><BR>
+                                <BR><BR>
+
+
+
+
+
+        </main>
+    </body>
+
+    <script type="text/javascript">
+        const rainContainer = document.querySelector('.rain-container');
+        const numDrops = 300;
+        
+        for (let i = 0; i < numDrops; i++) {
+          const drop = document.createElement('div');
+          drop.classList.add('drop');
+          drop.style.left = `${Math.random() * 100}%`;
+          drop.style.animationDelay = `${Math.random() * -2}s`;
+          rainContainer.appendChild(drop);
+        }
+
+
+        var i = 0;
+var txt = 'AI will Threaten It'; /* The text */
+var speed = 110; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+let max = 140;
+let min = 10;
+let lastDrawTime = 0;
+const minDrawInterval = 1000;
+const drawChance = 0.05;
+
+
+document.onmousemove=function(e){
+
+    const currentTime = Date.now();
+
+  if (currentTime - lastDrawTime >= minDrawInterval) {
+    if (Math.random() < drawChance) {
+      let newDiv = document.createElement("DIV");
+      let rotation = Math.random()*90;
+      newDiv.classList.add("shape");
+      newDiv.style.width = makeRandomSize(min, max) + "px";
+      newDiv.style.height = makeRandomSize(min, max) + "px";
+      newDiv.style.left = e.clientX + "px";
+      newDiv.style.top = e.clientY + "px";
+      newDiv.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+      document.body.appendChild(newDiv);
+      
+      lastDrawTime = currentTime;
+}
+  }
+};
+
+
+function makeRandomSize(minSize, maxSize){
+  return minSize + Math.random()*(maxSize-minSize);
+}
+                </script>

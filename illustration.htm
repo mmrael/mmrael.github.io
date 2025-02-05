@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Immersive Tech Obscures Reality. AI Will Threaten It</title>
+
+
+<style type="text/css">
+    body {
+        background-color: #000;
+    }
+
+    .leftcircle {
+        position: fixed;
+        top: 210px;
+        left: 335px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%
+}
+
+.rightcircle {
+    position: fixed;
+        top: 210px;
+        right: 335px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%
+}
+
+
+
+.leftgoggle {
+        position: absolute;
+        top: 100px;
+        left: 185px;
+  width: 500px;
+  height: 500px;
+  background: hsl(0, 0%, 40%);
+  border-radius: 50%
+}
+
+
+
+.rightgoggle {
+    position: absolute;
+        top: 100px;
+        right: 185px;
+  width: 500px;
+  height: 500px;
+  background: hsl(0, 0%, 40%);
+  border-radius: 50%
+}
+
+
+.flag {
+      width: 500px;
+      height: 200px;
+      top: 200px;
+      left: 400px;
+      box-sizing: content-box;
+      padding-top: 15px;
+      position: absolute;
+      background: hsl(0, 0%, 40%);
+      color: white;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .flag:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 13px solid #eee;
+      border-left: 55px solid transparent;
+      border-right: 55px solid transparent;
+    }
+
+    .flag:hover {
+        background: #000;
+        transition: 200ms;
+    }
+
+    .goggles-box {
+        position: relative;
+    }
+
+    .goggles-box:hover .flag,
+.goggles-box:hover .leftgoggle,
+.goggles-box:hover .rightgoggle {  
+background-color:hsl(0, 0%, 0%);
+transition: 200ms;
+}
+  
+
+.rain-container {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 5px;
+    background-color: hsl(0, 0%, 0%);
+  }
+  
+  .drop {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: hwb(183 0% 0%);
+    animation: fall 2s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+    </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="rain-container"></div>
+
+<div class="goggles-box">
+            <div class="flag"></div>
+            <div class="flagafter"></div>
+            <div class="leftgoggle"></div>
+            <div class="rightgoggle"></div>
+</div>
+
+
+    
+
+            <div class="leftcircle"></div>
+            <div class="rightcircle"></div>
+
+
+
+
+<BR><BR>
+    <BR><BR>
+        <BR><BR>
+            <BR><BR>
+                <BR><BR>
+                    <BR><BR>
+                        <BR><BR>
+                            <BR><BR>
+                                <BR><BR>
+
+
+
+
+
+        </main>
+    </body>
+
+    <script type="text/javascript">
+        const rainContainer = document.querySelector('.rain-container');
+        const numDrops = 300;
+        
+        for (let i = 0; i < numDrops; i++) {
+          const drop = document.createElement('div');
+          drop.classList.add('drop');
+          drop.style.left = `${Math.random() * 100}%`;
+          drop.style.animationDelay = `${Math.random() * -2}s`;
+          rainContainer.appendChild(drop);
+        }
+                </script>
