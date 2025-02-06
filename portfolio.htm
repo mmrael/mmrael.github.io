@@ -12,6 +12,14 @@
 </head>
 <style>
 
+:root {
+  --highlight-color: null;
+}
+
+::selection {
+  background: var(--highlight-color);
+}
+
 .header:hover {
     background: url(https://m.media-amazon.com/images/M/MV5BMTk0NTcyNTkwM15BMl5BanBnXkFtZTgwODg1NDAxNzE@._V1_.jpg);
     color:#00ff6e;
@@ -87,3 +95,13 @@ transition: 500ms;
             </center>
     </body>
     </html>
+
+    <script type="text/javascript">
+    const colors = ["#252525", "#00ff6e", "#002e1e", "#ffffff", "#8a8a8a"];
+
+window.addEventListener("mousedown", (e) => {
+  const color = colors.shift();
+  document.documentElement.style.setProperty("--highlight-color", color);
+  colors.push(color);
+});
+</script>

@@ -18,6 +18,7 @@
         font-weight: 400;
         font-style: italic;
         font-size: 30px;
+        opacity: 0;
 
     }
 
@@ -126,7 +127,13 @@
         position: relative;
     }
 
+    .goggles-box:hover .leftgoggle {
+        box-shadow: -10px -5px 5px rgb(0, 155, 163);
+    }
 
+    .goggles-box:hover .rightgoggle {
+        box-shadow: 10px -5px 5px rgb(0, 155, 163);
+    }
 
     .goggles-box:hover .flag,
 .goggles-box:hover .leftgoggle,
@@ -141,10 +148,7 @@ background-color:white;
 transition: 200ms ease;
 }
 
-.goggles-box:hover .h2div {
-    opacity: 1;
-    transition: 500ms ease;
-}
+
 
 
   

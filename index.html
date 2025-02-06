@@ -10,6 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
+<style>
+    :root {
+  --highlight-color: null;
+}
+
+::selection {
+  background: var(--highlight-color);
+}
+</style>
 <body>
     <center>
         <BR><BR>
@@ -133,7 +142,18 @@
         </center>
     </div>
 
-    <script type=""text/javascript">
+    <script type="text/javascript">
+
+
+    const colors = ["#252525", "#00ff6e", "#002e1e", "#ffffff", "#8a8a8a"];
+
+window.addEventListener("mousedown", (e) => {
+  const color = colors.shift();
+  document.documentElement.style.setProperty("--highlight-color", color);
+  colors.push(color);
+});
+
+
     let element = document.getElementById("demo");
 
 console.log(new Date());
