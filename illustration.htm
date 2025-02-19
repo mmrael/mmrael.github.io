@@ -208,9 +208,10 @@ transition: 200ms ease;
     width: 10px;
     height: 2px;
     background-color: hwb(183 0% 0%);
-    animation: fall 2s linear infinite;
+    animation: fall 2s linear infinite, colordrop 5s infinite;
   }
-  
+
+
   @keyframes fall {
     0% {
       transform: translateY(-10px);
@@ -218,6 +219,13 @@ transition: 200ms ease;
     100% {
       transform: translateY(100vh);
     }
+
+  }
+
+    @keyframes colordrop {
+  from {background: hwb(183 0% 0%);}
+  to {background: red;}
+
 
   }
     </style>
