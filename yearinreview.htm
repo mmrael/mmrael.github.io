@@ -65,7 +65,7 @@ a:hover {
 .nav-div {
     position: fixed;
     top: 395px;
-    left: 85px;
+    left: 100px;
     font-family: "Abadi MT Condensed Light", sans-serif;
     color: #003a91;
     font-size: 25px;
@@ -118,6 +118,60 @@ transition: 200ms;
 }
 
 
+.dropbtn {
+  background-color: #f5f9ff;
+  color: #003a91;
+  font-size: 26px;
+  font-family: "Abadi MT Condensed Light", sans-serif;
+  border: none;
+padding: 0px;
+}
+
+.dropbtn:hover {
+    font-family: "Abadi MT Condensed Extra Bold", sans-serif;
+    color: #003a91;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: #f5f9ff;
+  background-color: #003a91;
+  border: 2px dotted #f5f9ff;
+  font-size: 20px;
+  min-width: 275px;
+  left: 115px;
+  z-index: 1;
+  transition: 200ms;
+}
+
+.dropdown-content a {
+  color: #f5f9ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:hover {
+    color: #f5f9ff;
+}
+
+.dropdown-content a:hover {
+    color: #f5f9ff;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+color: #f5f9ff;
+}
+
+
 
 
 </style>
@@ -129,7 +183,14 @@ transition: 200ms;
     <a href="ourbenefactors.htm">Celebrating Our Benefactors</a><BR><BR>
         <a href="visionvalues.htm"> Vision, Values, Action</a><BR><BR>
             <a href="futurechall.htm">Future Endeavors</a><BR><BR>
-                <a href="financials.htm">Financial Statements</a><BR><BR></div>
+                <div class="dropdown">
+                <button class="dropbtn">Financial Statements</button>
+                <div class="dropdown-content">
+                        <a href="financials.htm">Independent Auditor's Report</a>
+                        <a href="financials.htm">Statements</a>
+                    </div>
+                  </div> 
+                <BR><BR></div>
 
     <div class="intro-div"><b>Doctors Without Borders/Médecins Sans Frontières (MSF)</b> was founded in 1971 in France by a group of doctors and journalists in the wake of war and famine in Biafra, Nigeria. Their aim was to establish an independent organization that focused on delivering emergency medical humanitarian aid quickly, effectively, and impartially.<br>
         —<br>

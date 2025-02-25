@@ -46,6 +46,28 @@ a:hover {
     height: 150px;
     width: 900px;
 }
+
+.title2-div a {
+    font-family: "Abadi MT Condensed Light", sans-serif;
+    color: rgb(181, 211, 255);
+    font-size: 80px;
+}
+
+.title2-div a:hover {
+    letter-spacing: 2px;
+    transition: 200ms;
+}
+
+.img-div {
+    background: linear-gradient(rgba(255, 255, 255, 0.844), rgba(255, 255, 255, 0.844));
+    position: fixed;
+    top: 145px;
+    left: 65px;
+    height: 100px;
+    width: 100px;
+    opacity: 0.4;
+}
+
 .subtitle-div {
     position: fixed;
     top: 300px;
@@ -59,7 +81,7 @@ a:hover {
 
 .nav-div {
     position: fixed;
-    top: 395px;
+    top: 380px;
     left: 55px;
     font-family: "Abadi MT Condensed Light", sans-serif;
     color: #003a91;
@@ -74,17 +96,25 @@ a:hover {
     color: #003a91;
 }
 
+.nav-div a:hover {
+    font-family: "Abadi MT Condensed Extra Bold", sans-serif;
+    color: #003a91;
+    left: 10px;
+    transition: 200ms;
+}
+
 .content-div {
     position: relative;
     background-color: white;
     top: 0px;
     left: 600px;
     font-family: "Abadi MT Condensed Light", sans-serif;
+    text-align: justify;
     color: #003a91;
     font-size: 17px;
     height: 800px;
     width: 600px;
-    padding: 50px;
+padding: 50px;
 
 }
 
@@ -92,6 +122,73 @@ a:hover {
     font-family: "Abadi MT Condensed Extra Bold", sans-serif;
 
 }
+
+.text-div {
+    position: relative;
+    background-color: white;
+    font-family: "Abadi MT Condensed Light", sans-serif;
+    text-align: justify;
+    color: #003a91;
+    font-size: 17px;
+    height: 800px;
+    width: 500px;
+}
+
+
+.dropbtn {
+  background-color: #f5f9ff;
+  color: #003a91;
+  font-size: 26px;
+  font-family: "Abadi MT Condensed Light", sans-serif;
+  border: none;
+padding: 0px;
+}
+
+.dropbtn:hover {
+    font-family: "Abadi MT Condensed Extra Bold", sans-serif;
+    color: #003a91;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: #f5f9ff;
+  background-color: #003a91;
+  border: 2px dotted #f5f9ff;
+  font-size: 20px;
+  min-width: 275px;
+  left: 115px;
+  z-index: 1;
+  transition: 200ms;
+}
+
+.dropdown-content a {
+  color: #f5f9ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:hover {
+    color: #f5f9ff;
+}
+
+.dropdown-content a:hover {
+    color: #f5f9ff;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+color: #f5f9ff;
+}
+
+
 
 
 
@@ -104,20 +201,31 @@ a:hover {
                     <BR><BR>
                         <BR><BR>
                             <BR><BR>
+                                <div class="text-div">
             <b>Doctors Without Borders/Médecins Sans Frontières (MSF)</b> was founded in 1971 in France by a group of doctors and journalists in the wake of war and famine in Biafra, Nigeria. Their aim was to establish an independent organization that focused on delivering emergency medical humanitarian aid quickly, effectively, and impartially.<br>
         —<br>
         Three hundred volunteers made up the organization when it was founded, including doctors, nurses, logistics experts, and other staff, including the 13 founding members. <b>MSF was established on the belief that all people should have access to high quality health care, regardless of gender, race, religion, creed, or political affiliation.</b> From the start, our teams made a commitment not just to care for patients but to bear witness to their experiences and speak out to call attention to the problems driving emergency needs.<BR>
         —<BR>
         Over the past five decades, MSF has grown from a group of a few hundred volunteers to an international movement of <b>more than 69,000 staff providing over 16 million medical consultations in more than 70 countries every year.</b> But the core values of humanitarianism, independence, neutrality, and impartiality that brought those original members together in 1971 continue to drive our work.</div>
+    
+    </div>
 
-        <div class="title2-div">Doctors Without Borders</div>
+        <div class="title2-div"><a href="yearinreview.htm">Doctors Without Borders</a></div>
     <div class="title-div">From the Global Director</div>
-    <div class="nav-div"><a href="yearinreview.htm">Home</a><BR><BR>
-        <b>From the Global Director</b><BR><BR>
+    <div class="img-div"><a href="yearinreview.htm"><img src="https://i.imgur.com/jYNxrVS.png" height="175px"></a></div>
+    <div class="nav-div">
+    <b>From the Global Director</b><BR><BR>
     <a href="ourbenefactors.htm">Celebrating Our Benefactors</a><BR><BR>
         <a href="visionvalues.htm"> Vision, Values, Action</a><BR><BR>
             <a href="futurechall.htm">Future Endeavors</a><BR><BR>
-                <a href="financials.htm">Financials</a><BR><BR></div>
+                <div class="dropdown">
+                    <button class="dropbtn">Financial Statements</button>
+                    <div class="dropdown-content">
+                            <a href="financials.htm">Independent Auditor's Report</a>
+                            <a href="financials.htm">Statements</a>
+                        </div>
+                      </div> 
+                    </div>
 
 
 </body>

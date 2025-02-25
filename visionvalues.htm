@@ -53,6 +53,30 @@ h1 {
     height: 150px;
     width: 900px;
 }
+
+.title2-div a {
+    font-family: "Abadi MT Condensed Light", sans-serif;
+    color: rgb(181, 211, 255);
+    font-size: 80px;
+
+}
+
+.title2-div a:hover {
+    letter-spacing: 2px;
+    transition: 200ms;
+}
+
+.img-div {
+    background: linear-gradient(rgba(255, 255, 255, 0.844), rgba(255, 255, 255, 0.844));
+    position: fixed;
+    top: 145px;
+    left: 65px;
+    height: 100px;
+    width: 100px;
+    opacity: 0.4;
+}
+
+
 .subtitle-div {
     position: fixed;
     top: 300px;
@@ -66,7 +90,7 @@ h1 {
 
 .nav-div {
     position: fixed;
-    top: 395px;
+    top: 380px;
     left: 55px;
     font-family: "Abadi MT Condensed Light", sans-serif;
     color: #003a91;
@@ -80,6 +104,13 @@ h1 {
     font-family: "Abadi MT Condensed Extra Bold", sans-serif;
 }
 
+.nav-div a:hover {
+    font-family: "Abadi MT Condensed Extra Bold", sans-serif;
+    color: #003a91;
+    left: 10px;
+    transition: 200ms;
+}
+
 .content-div {
     position: relative;
     background-color: white;
@@ -88,7 +119,7 @@ h1 {
     font-family: "Abadi MT Condensed Light", sans-serif;
     color: #003a91;
     font-size: 17px;
-    height: 800px;
+    height: 2000px;
     width: 600px;
     padding: 50px;
 
@@ -99,24 +130,115 @@ h1 {
 
 }
 
+.content-div a {
+    font-family: "Abadi MT Condensed Extra Bold", sans-serif;
+    color: #003a91;
+}
+
+.content-div a:hover {
+    font-family: "Abadi MT Condensed Extra Bold", sans-serif; 
+    font-size: 20px;
+    transition: 200ms;
+}
+
+.text-div {
+    position: relative;
+    background-color: white;
+    font-family: "Abadi MT Condensed Light", sans-serif;
+    text-align: justify;
+    color: #003a91;
+    font-size: 17px;
+    height: 800px;
+    width: 500px;
+}
+
+.dropbtn {
+  background-color: #f5f9ff;
+  color: #003a91;
+  font-size: 26px;
+  font-family: "Abadi MT Condensed Light", sans-serif;
+  border: none;
+padding: 0px;
+}
+
+.dropbtn:hover {
+    font-family: "Abadi MT Condensed Extra Bold", sans-serif;
+    color: #003a91;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: #f5f9ff;
+  background-color: #003a91;
+  border: 2px dotted #f5f9ff;
+  font-size: 20px;
+  min-width: 275px;
+  left: 115px;
+  z-index: 1;
+  transition: 200ms;
+}
+
+.dropdown-content a {
+  color: #f5f9ff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:hover {
+    color: #f5f9ff;
+}
+
+.dropdown-content a:hover {
+    color: #f5f9ff;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+color: #f5f9ff;
+}
+
+
+
 
 
 </style>
 <body>
     <div class="content-div">
-        <BR><BR><BR>
-<h1>We are....
-</h1>
-<BR><BR><BR></div>>
+        <BR>
+<img src="https://i.imgur.com/F0D40nc.png" height="800px">
+<BR><BR>
+    <center>
+    <img src="https://i.imgur.com/ONAZQtL.png" width="500px">
+    </center>
+    <BR><BR>
+    <img src="https://i.imgur.com/ZApMGsJ.png" height="700px">
+    <BR><BR>
+    <a href="yearinreview.htm">More highlights >></a></div>
 
-        <div class="title2-div">Doctors Without Borders</div>
+        <div class="title2-div"><a href="yearinreview.htm">Doctors Without Borders</a></div>
     <div class="title-div">Our Vision, Values, & Action</div>
-    <div class="nav-div"><a href="yearinreview.htm">Home</a><BR><BR>
+    <div class="img-div"><a href="yearinreview.htm"><img src="https://i.imgur.com/tR8FjDY.png" width="300px"></a></div>
+    <div class="nav-div">
     <a href="fromthe.htm">From the Global Director</a><BR><BR>
         <a href="ourbenefactors.htm">Celebrating Our Benefactors</a><BR><BR>
             <b>Vision, Values, Action</b><BR><BR>
             <a href="futurechall.htm">Future Endeavors</a><BR><BR>
-                <a href="financials.htm">Financials</a><BR><BR></div>
+                <div class="dropdown">
+                    <button class="dropbtn">Financial Statements</button>
+                    <div class="dropdown-content">
+                            <a href="financials.htm">Independent Auditor's Report</a>
+                            <a href="financials.htm">Statements</a>
+                        </div>
+                      </div> 
+                    <BR><BR></div>
 
 
 </body>
