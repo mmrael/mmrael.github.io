@@ -46,7 +46,8 @@ body {
   
   
   .poster {
-    background: url(https://i.imgur.com/DQQE6Xb.png);
+    background: url(https://i.imgur.com/MXDGHFg.png);
+    background-position: center;
     border-radius: 20px;
     border-color: #fff;
     position: relative;
