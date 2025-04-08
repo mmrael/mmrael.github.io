@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🟣 Southwest Art</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fleur+De+Leah&family=Fontdiner+Swanky&family=Goudy+Bookletter+1911&family=Bentham&family=Quicksand:wght@300..700&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+            body {
+                background-color: hsl(0, 100%, 10%);
+                color: hsl(0, 100%, 10%);
+                margin: 0;
+                font-family: "Playfair Display", serif;
+                font-size: 20px;
+            }
+
+            a {
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            h1 {
+                font-family: "Fontdiner Swanky", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 60px;
+                color: white;
+                letter-spacing: 3px;
+            }
+
+            h1:hover {
+                color: #ffc400;
+            }
+
+            h2 {
+                font-family: cursive;
+                font-size: 40px;
+                color: white;
+            }
+
+            h3 {
+                font-family: "Playfair Display", serif;
+                font-size: 60px;
+            }
+
+            .site {
+                width: 99vw;
+                height: 308vh;
+            }
+
+            .logo1 {
+                width: 200px;
+      height: 100px;
+      background: #ff0000;
+      border-radius: 100px / 50px;
+      position: fixed;
+      top: 25px;
+      left: 55px;
+      transform: rotate(350deg);
+    }
+
+    .logo1:hover {
+        transform: scale(1);
+    }
+
+    .redoval {
+        width: 200px;
+      height: 100px;
+      background: #ff0000;
+      border-radius: 100px / 50px;
+      position: fixed;
+      top: 25px;
+      left: 55px;
+      transform: rotate(350deg);
+    }
+
+    .diamond-narrow1 {
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom: 14px solid #ffc400;
+      position: fixed;
+      top: 100px;
+      left: 25px;
+      transform: rotate(350deg);
+    }
+    .diamond-narrow1:after {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 14px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top: 14px solid #ffc400;
+    }
+
+
+    .diamond-narrow2 {
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom: 14px solid #ffc400;
+      position: fixed;
+      top: 125px;
+      left: 215px;
+      transform: rotate(350deg);
+    }
+    .diamond-narrow2:after {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 14px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top: 14px solid #ffc400;
+    }
+
+
+    .diamond-narrow3 {
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom: 14px solid #ffc400;
+      position: fixed;
+      top: 30px;
+      left: 125px;
+      transform: rotate(350deg);
+    }
+    .diamond-narrow3:after {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 14px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top: 14px solid #ffc400;
+    }
+
+    .antiques {
+        height: 20px;
+        width: 100px;
+        font-family: "Cookie", cursive;
+        font-weight: 400;
+        font-size: 40px;
+        color: white;
+        background-color: red;
+position: fixed;
+top: 145px;
+left: 90px;
+    }
+
+    .left-nav {
+        height: 449px;
+        width: 200px;
+        font-family: "Spicy Rice", serif;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 2.2;
+        color: white;
+        background-color: red;
+        position: fixed;;
+        top: 235px;
+        left: 50px;
+    }
+
+    .left-nav:hover {
+        background-color: red;
+    }
+
+    .cart {
+        height: 20px;
+        width: 127px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+        background-color: red;
+        position: fixed;
+        top: 50px;
+        right: 20px;
+    }
+
+    .cart:hover {
+        color: red;
+    }
+
+    .holiday-box {
+        height: 500px;
+        width: 600px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: url('https://scontent-lga3-3.xx.fbcdn.net/v/t51.75761-15/468782181_18472259782031852_5136728395525575393_n.jpg?stp=dst-jpegr_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=QDP5Fx3ysLsQ7kNvgGOvxbj&_nc_zt=23&se=-1&_nc_ht=scontent-lga3-3.xx&_nc_gid=A5VZN0pIObnC9XPWTxKkH2v&oh=00_AYCO9QgeokUI2T_uzz9vBXva7HvmYooJTkWu_ZKD-iI-bg&oe=675E7893');
+        background-size: contain;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 75px;
+        left: 345px;
+    }
+
+    .living-box {
+        height: 500px;
+        width: 600px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: url('https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/457569601_18454684057031852_9100780203853716053_n.jpg?stp=dst-jpegr_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tlDf7pqCh7cQ7kNvgHLW1H3&_nc_zt=23&se=-1&_nc_ht=scontent-lga3-1.xx&_nc_gid=A28sTbHwCSbgdPpJ0ZZRyCu&oh=00_AYCB6Y1Dc3X5ZUyOInkn5C7J-90xs1Cbj6E9HXKgcI_Rcg&oe=675E83B5');
+        background-size: contain;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 75px;
+        left: 745px;
+    }
+
+    .dining-box {
+        height: 500px;
+        width: 600px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: url('https://scontent-lga3-3.xx.fbcdn.net/v/t51.75761-15/465926829_18468509809031852_4458936751850170188_n.jpg?stp=dst-jpegr_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=q2okLB-4sP8Q7kNvgG-15vO&_nc_zt=23&se=-1&_nc_ht=scontent-lga3-3.xx&_nc_gid=Au8CW007w5U4HgpxVBLuuIh&oh=00_AYDyx9nwVmxLGFnp23l7SsOSOtSyuTBDC-wQwe1xKRg3Pw&oe=675E97CF');
+        background-size: contain;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 575px;
+        left: 345px;
+    }
+
+    .bed-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_Dixon_Desert-Rocks-21.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 500px;
+        left: 900px;
+    }
+
+.bed-box:hover {
+        background: url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_Dixon_Desert-Rocks-21.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 200ms;
+    }
+
+    
+
+    .apparel-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0225_Rawle_J_MorningFlock_oil_12x16-1536x1145.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 1000px;
+        left: 345px;
+    }
+
+
+    .apparel-box:hover {
+        background: url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0225_Rawle_J_MorningFlock_oil_12x16-1536x1145.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 200ms;
+    }
+
+    .lighting-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_soukup_j_GlovesOff_oil_14x14.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 1000px;
+        left: 900px;
+    }
+
+    .lighting-box:hover {
+        background: url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_soukup_j_GlovesOff_oil_14x14.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 200ms;
+    }
+
+    .art-box {
+        height: 500px;
+        width: 600px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: url('https://scontent-lga3-3.xx.fbcdn.net/v/t51.75761-15/467464734_18470048152031852_9115044892542671739_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=G5JA59CjYcMQ7kNvgHv4N_S&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&_nc_gid=AEzpwb-SkBUGoGNG-bve7t-&oh=00_AYAX9AX6_XtZNF0Gd3j6NpcPCmeBoA7fORDAYbTy5Kn22Q&oe=675FAF9E');
+        background-size: contain;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 1575px;
+        left: 345px;
+    }
+
+    .gift-box {
+        height: 500px;
+        width: 600px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: url('https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/457314850_18454437061031852_5939222366900082996_n.jpg?stp=dst-jpegr_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=0HkexkM3hHAQ7kNvgFgyPVf&_nc_zt=23&se=-1&_nc_ht=scontent-lga3-3.xx&_nc_gid=A6QRz02hqbDpUTRApzhGvKO&oh=00_AYAO8_PLYs4cJ8ws0QtrkAHmt4SI5nkJzI61rVLCc2MKJw&oe=675E9487');
+        background-size: contain;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 1575px;
+        left: 745px;
+    }
+
+    .top-container {
+        background: red;
+    }
+
+    .bottom-container {
+        height: 100px;
+        background: url('https://scontent-lga3-3.xx.fbcdn.net/v/t51.75761-15/468782181_18472259782031852_5136728395525575393_n.jpg?stp=dst-jpegr_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=QDP5Fx3ysLsQ7kNvgGOvxbj&_nc_zt=23&se=-1&_nc_ht=scontent-lga3-3.xx&_nc_gid=A5VZN0pIObnC9XPWTxKkH2v&oh=00_AYCO9QgeokUI2T_uzz9vBXva7HvmYooJTkWu_ZKD-iI-bg&oe=675E7893');
+background-position: center;
+    }
+
+    .main1 {
+                width: 99vw;
+                height: 308vh;
+                background-color: red;
+            }
+
+    
+   .main2 .main1 {
+    width: 99vw;
+    height: 308vh;
+    background-color: hsl(0, 100%, 10%);
+   }
+
+   .main2 h1 {
+    font-family: "Playfair Display", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 60px;
+                color: white;
+                letter-spacing: 3px;
+
+   }
+
+   .main2 h1:hover {
+    color: hwb(25 0% 0%)
+   }
+
+   .main2 a {
+    color: hwb(25 0% 0%)
+   }
+
+   .main2 a:hover {
+    color:hsl(0, 100%, 10%);
+   }
+
+   .main2 .logo1 {
+    width: 200px;
+      height: 100px;
+      background: hsl(0, 100%, 10%);
+      border-radius: 100px / 50px;
+      position: fixed;
+      top: 25px;
+      left: 55px;
+      transform: rotate(360deg);
+   }
+
+   .main2 .redoval {
+    opacity: 0;
+   }
+
+   .main2 .antiques {
+        height: 20px;
+        width: 100px;
+        font-family: "Cookie", cursive;
+        font-weight: 400;
+        font-size: 40px;
+        color: white;
+        background-color: hsl(0, 100%, 10%);
+position: fixed;
+top: 145px;
+left: 90px;
+    }
+
+    .main2 .diamond-narrow1 {
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-bottom: 11.2px solid hsl(173, 100%, 50%);
+      position: fixed;
+      top: 100px;
+      left: 25px;
+      transform: rotate(350deg);
+    }
+    .main2 .diamond-narrow1:after {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 11.2px;
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-top: 11.2px solid hsl(173, 100%, 50%);
+    }
+
+
+    .main2 .diamond-narrow2 {
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-bottom: 11.2px solid hsl(173, 100%, 50%);
+      position: fixed;
+      top: 135px;
+      left: 215px;
+      transform: rotate(350deg);
+    }
+    .main2 .diamond-narrow2:after {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 11.2px;
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-top: 11.2px solid hsl(173, 100%, 50%);
+    }
+
+
+    .main2 .diamond-narrow3 {
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-bottom: 11.2px solid hsl(173, 100%, 50%);
+      position: fixed;
+      top: 30px;
+      left: 125px;
+      transform: rotate(350deg);
+    }
+    .main2 .diamond-narrow3:after {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 11.2px;
+      width: 0;
+      height: 0;
+      border: 8px solid transparent;
+      border-top: 11.2px solid hsl(173, 100%, 50%);
+    }
+
+    .main2 .left-nav {
+        background-color:hsl(0, 100%, 10%);
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        line-height: 2.5;
+    }
+
+
+
+    .main2 .cart {
+        height: 20px;
+        width: 127px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: hwb(25 0% 0%);
+        background-color: hsl(0, 100%, 10%);
+        position: fixed;
+        top: 50px;
+        right: 20px;
+    }
+
+    .main2 .cart:hover {
+        color: hsl(0, 100%, 10%);
+    }
+
+    .main2 .top-container {
+        color:white;
+        background: url('https://i.etsystatic.com/7059968/r/il/4395a6/2038624119/il_570xN.2038624119_opfm.jpg');
+        background-position: top;
+    }
+
+    .main2 .bottom-container {
+        color: #fff;
+        background: url('https://i.etsystatic.com/7059968/r/il/4395a6/2038624119/il_570xN.2038624119_opfm.jpg');
+        background-position: center;
+    }
+
+    .main2 .holiday-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_Pierson_Paige_The-Magic-of-Eloy-Jimenez_ooc_40x30.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 0px;
+        left: 345px;
+
+    }
+
+    .main2 .holiday-box:hover {
+        background: url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_Pierson_Paige_The-Magic-of-Eloy-Jimenez_ooc_40x30.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 200ms;
+    }
+
+
+    .main2 .living-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url(https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_Magdalina_Tamara_Sedonas-Steamboat-Rock_ooc_8x10.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 0px;
+        left: 900px;
+        
+    }
+
+    .main2 .living-box:hover {
+        background: url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_Magdalina_Tamara_Sedonas-Steamboat-Rock_ooc_8x10.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 200ms;
+    }
+
+    .main2 .dining-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_kowalski_j_Ambient-Beauty_oil-mixed-media-on-panel_44x44x2.5.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 500px;
+        left: 345px;
+    }
+
+    .main2 .dining-box:hover {
+        background: url('https://www.southwestart.com/wp-content/uploads/2025/03/SWA0425_kowalski_j_Ambient-Beauty_oil-mixed-media-on-panel_44x44x2.5.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: 200ms;
+    }
+
+
+    .main2 .art-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url('https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/462756595_18462656416031852_5425168928012077128_n.jpg?stp=dst-jpegr_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=y-byxrmTb-UQ7kNvgFD5HLe&_nc_zt=23&se=-1&_nc_ht=scontent-lga3-3.xx&_nc_gid=AMlq3X47I37lfwmy1Sup6Su&oh=00_AYDHeR9V-F9qLpZOrKOQIJbZvKS0-FrbgbNMIJMCPlXdvA&oe=675EC42D');
+        background-size: contain;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 1500px;
+        left: 345px;
+    } 
+
+
+    
+    .main2 .gift-box {
+        height: 500px;
+        width: 550px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 50px;
+        color: white;
+        background: linear-gradient(rgba(255, 255, 255, 0.465), rgba(255, 255, 255, 0.465)), url('https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/462617764_18462656434031852_6819922897135069646_n.jpg?stp=dst-jpegr_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tGtncRJpSPUQ7kNvgFTsWse&_nc_zt=23&se=-1&_nc_ht=scontent-lga3-2.xx&_nc_gid=AiEjLGd-f29fc5FWaSwvotv&oh=00_AYA8bLCxvs4jd5s2bjxzZGmTb90jkeiLPEiet3l_80dLAQ&oe=675E9C49');
+        background-size: contain;
+        background-position: center;
+        background-color: red;
+        position: absolute;
+        top: 1500px;
+        left: 900px;
+    }
+
+
+
+   
+
+
+
+
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="main2">
+                <div class="cart"><a href="#">Log In | Register</a></div>
+
+                <div class="redoval"></div>
+                <div class="logo1">
+                    <h1>Kudzu</h1>
+                </div>
+                <div class="diamond-narrow1"></div>
+                <div class="diamond-narrow2"></div>
+                <div class="diamond-narrow3"></div>
+                <div class="antiques">Antiques</div>
+                <div class="left-nav">
+                   <a href="#">Home</a><BR>
+                        <a href="#">Articles</a><BR>
+                            <a href="#">Art Contests</a><BR>
+                                <a href="#">Subscribe</a><BR>
+                                    <a href="#">Shop</a><BR>
+                                        <a href="#">About</a><BR>
+                                            <a href="#">Contact</a>
+                                
+                </div>
+                <div class="holiday-box">
+                    <BR>
+                    <center>
+                   <a href="#"><BR><BR>Gallery Row:<BR> Figurative Art of the Southwest</a>
+                    </center>
+                </div>
+                <div class="living-box">
+                    <BR>
+                    <center>
+                   <a href="#">Show Preview: <BR> Western Art Show & Sale</a>
+                    </center>
+                </div>
+                <BR>
+                <div class="dining-box">
+                    <BR>
+                    <center>
+                   <a href="#">Jason Kowalski -<BR>  Ghosts in the Landscape</a>
+                    </center>
+                </div>
+                <div class="bed-box">
+                    <BR>
+                    <center>
+                   <a href="#"><BR><BR>Show Preview:<BR> Scottsdale Art Auction</a>
+                    </center>
+                </div>
+                <div class="apparel-box">
+                    <BR>
+                    <center>
+                   <a href="#">Artist to Watch:<BR> Jared Rawle</a>
+                    </center>
+                </div>
+                <div class="lighting-box">
+                    <BR>
+                    <center>
+                   <a href="#"><BR><BR>Jill Soukup -<BR> Dream Catcher</a>
+                    </center>
+                </div>
+                <div class="art-box">
+                    <BR>
+                    <center>
+                   <a href="#">Art</a>
+                    </center>
+                </div>
+                <div class="gift-box">
+                    <BR>
+                    <center>
+                   <a href="#">Gifts</a>
+                    </center>
+                </div>
+                <BR><BR><BR>
+                    <BR><BR><BR>
+                        <BR><BR><BR>
+                            <BR><BR><BR>
+                                <BR><BR><BR>
+                                    <BR><BR><BR>
+                                        <BR><BR><BR>
+                                            <BR><BR><BR>
+                                                <BR><BR><BR>
+                                                    <BR><BR><BR>
+                                                        <BR><BR><BR>
+                                                            <BR><BR><BR>
+                                                                <BR><BR><BR>
+                                                                    <BR><BR><BR>
+                                                                        <BR><BR><BR>
+                                                                            <BR><BR><BR>
+                                                                                <BR><BR><BR>
+                                                                                    <BR><BR><BR>
+
+
+                    <BR><BR><BR>
+                        <BR><BR><BR>
+                            <BR><BR><BR>
+                                <BR><BR><BR>
+                                    <BR><BR><BR>
+                                        <BR><BR><BR>
+                                            
+                            <div class="bottom-container">
+                            <marquee><i><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Join Mailing List</a></i></marquee>
+                            <BR><BR>
+                               <center>Copyright © 2025, Peak Media Properties. All Rights Reserved.</center>
+                            </div>
+
+
+        </main>
+
+
+    </body>
+
+</html>
+
