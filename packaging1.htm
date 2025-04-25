@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+  display:flex;
+  gap:50px;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100vh;
+  flex-wrap:wrap;
+}
+
+.dog{
+  width: 200px;
+  height:200px;
+  background:red;
+  position:relative;
+}
+
+.dog1{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position:relative;
+  background: lime;
+}
+
+.dog2{
+  position:relative;
+  border-radius: 10%;
+  background: SaddleBrown;
+}
+
+.raritySquare{
+  width:100%;
+  height:100%;
+  background:red;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%) rotate(45deg);
+  border-radius: 10%;
+  background: SaddleBrown;
+}
+
+.sunglasses{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -70%);
+  width: 100%;
+}
+
+.boots{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, 40%);
+  width: 80%;
+}
+</style>
+<body>
+    
+
+<div id="container">
+  
+    <!--   <div class="dog dog1">
+        <img class="sunglasses" src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-black-sunglasses-eyewear-png-image_11671474.png">
+      </div>
+      <div class="dog dog2">
+        <div class="raritySquare"></div>
+        <div class="raritySquare"></div>
+        <div class="raritySquare"></div>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/017/051/914/small_2x/boots-isolated-3d-rendering-png.png" class="boots">
+      </div> -->
+      
+    </div>
+<script>
+    const container = document.getElementById("container");
+
+
+const spreadsheetID = `1F3BqWiwuNed7oowWkI_UAzPX_FaeXWIzdG4FZHif7po`
+let tabName = 'Dogs'
+
+// format them into Ben's uri
+let opensheet_uri = `https://opensheet.elk.sh/${spreadsheetID}/${tabName}`;
+
+console.log(opensheet_uri)
+
+
+fetch(opensheet_uri)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+				
+        for (let dog of data){
+            
+            let newDogDiv = document.createElement("DIV");
+            newDogDiv.classList.add("dog");
+            container.appendChild(newDogDiv);
+          
+            
+            const color = dog.Color;
+            const clothing = dog.Clothing;
+            const size = parseFloat(dog.Size);
+            const rarity = parseInt(dog.Rarity);
+            const friendliness = parseInt(dog.Friendliness);
+          
+          
+          
+            const divSize = map(size, 1, 5, 50, 200);
+            const divRoundness = map(friendliness, 1, 5, 0, 50);
+          
+          
+            newDogDiv.style.background = color;
+            newDogDiv.style.width = divSize + "px";
+            newDogDiv.style.height = divSize + "px";
+            newDogDiv.style.borderRadius = divRoundness + "%";
+          
+          
+          
+            for (let i=0; i<rarity; i++){
+              
+              let newRarityDiv = document.createElement("DIV");
+              newRarityDiv.classList.add("raritySquare");
+              newRarityDiv.style.background = color;
+              newRarityDiv.style.borderRadius = divRoundness + "%";
+              newRarityDiv.style.transform = `translate(-50%, -50%) rotate(${Math.random() * 360}deg)`
+              newDogDiv.appendChild(newRarityDiv);
+              
+            }
+          
+          
+          
+            if (clothing == "Boot"){
+                let bootImg = document.createElement("IMG");
+                bootImg.classList.add("boots");
+                bootImg.src = "https://static.vecteezy.com/system/resources/thumbnails/017/051/914/small_2x/boots-isolated-3d-rendering-png.png"
+                newDogDiv.appendChild(bootImg);
+            }
+          
+          
+            if (clothing == "Sunglasses"){
+                let newImg = document.createElement("IMG");
+                newImg.classList.add("sunglasses");
+                newImg.src = "https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-black-sunglasses-eyewear-png-image_11671474.png"
+                newDogDiv.appendChild(newImg);
+            }
+            
+          
+            
+          
+          
+            
+        }
+  
+    })
+    .catch(function (err) {
+        console.log("Something went wrong!", err);
+    });
+
+
+
+
+
+function map(value, low1, high1, low2, high2) {
+    return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}
+</script>
+
+</body>
+</html>

@@ -3,93 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Paddywax Candles</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Aguafina+Script&family=Bentham&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cookie&family=Fleur+De+Leah&family=Fontdiner+Swanky&family=Goudy+Bookletter+1911&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300..700&family=Silkscreen:wght@400;700&family=Spicy+Rice&display=swap" rel="stylesheet">
 </head>
 <style>
-#container{
-  display:flex;
-  gap:50px;
-  align-items:center;
-  justify-content:center;
-  width:100%;
-  height:100vh;
+
+body {
+    background: #1e1e1e;
+
+}
+
+#container {
+    display:flex;
+    gap:50px;
+    align-items:center;
+    justify-content:center;
+  width: 100%;
+  height: 100%;
+  border: 5px solid red;
   flex-wrap:wrap;
 }
 
-.dog{
-  width: 200px;
-  height:200px;
-  background:red;
-  position:relative;
+ /* The face of the box */ 
+
+.rectangle1 {
+    box-sizing: border-box;
+position: relative;
+
+width: 322px;
+height: 323px;
+background: #92A740;
+border: 2px solid #747474;
 }
 
-.dog1{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position:relative;
-  background: BurlyWood;
+.paddywax {
+    position: relative;
+    top:50%;
+    left: 30%;
+    height: 75px;
+    width: 284px;
+    font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 83px;
+text-align: center;
+letter-spacing: 0.11em;
+color: #D9D9D9;
+text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
 }
 
-.dog2{
-  position:relative;
-  border-radius: 10%;
-  background: SaddleBrown;
+.underline {
+    position: relative;
+
+width: 200px;
+height: 0px;
+border: 0.5px solid #D9D9D9;
+transform: rotate(0.29deg);
 }
 
-.raritySquare{
-  width:100%;
-  height:100%;
-  background:red;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%) rotate(45deg);
-  border-radius: 10%;
-  background: SaddleBrown;
+.scent {
+position: relative;
+width: 183px;
+height: 11px;
+font-family: 'Aclonica';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 11px;
+text-align: center;
+letter-spacing: 0.3em;
+color: #747474;
 }
 
-.sunglasses{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -70%);
-  width: 100%;
+
+
+.star1 {
+position: relative;
+width: 7px;
+height: 8px;
+color: #747474;
 }
 
-.boots{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, 40%);
-  width: 80%;
+
+.star2 {
+position: relative;
+width: 7px;
+height: 8px;
+color: #747474;
 }
+
+
+
+.logo {
+    position: absolute;
+    top:50%;
+    left: 30%;
+  width: 106px;
+  height: 101px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="106" height="101" viewBox="0 0 106 101" xmlns="http://www.w3.org/2000/svg"><path d="M51.6635 4.80731C52.7963 -0.460669 60.307 -0.485354 61.4397 4.77517L74.89 67.2442C75.5599 70.3557 73.1868 73.3016 70.0018 73.3121L43.0991 73.4005C39.9141 73.411 37.541 70.4807 38.2111 67.3648L51.6635 4.80731Z" fill="%23C10404"/><path d="M96.4679 15.6352C100.277 11.8512 106.586 15.8373 104.724 20.8516L82.6829 80.2101C81.573 83.1991 77.9642 84.4139 75.2635 82.7077L52.2113 68.1435C49.5107 66.4373 49.1034 62.6851 51.3741 60.4295L96.4679 15.6352Z" fill="%23C10404"/><path d="M1.39437 28.7137C-1.47599 24.2174 3.78776 18.9768 8.31013 21.8284L61.7499 55.5242C64.4611 57.2337 64.8811 61.0022 62.6123 63.261L43.0909 82.6967C40.8221 84.9556 37.0335 84.5409 35.3127 81.8454L1.39437 28.7137Z" fill="%23C10404"/><ellipse cx="12.8879" cy="27.8509" rx="12.8879" ry="27.8509" transform="matrix(0.841111 -0.540863 0.511446 0.859315 21.2167 58.2012)" fill="%23C10404"/><ellipse cx="12.8533" cy="27.2716" rx="12.8533" ry="27.2716" transform="matrix(0.903232 0.429153 -0.402563 0.915392 70.9571 44)" fill="%23C10404"/><ellipse cx="60.5" cy="94.5" rx="8.5" ry="6.5" fill="%23C10404"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* svg {
+    z-index:100;
+    position:relative;
+    top: 25px;
+    right: 10px;
+}
+    */ 
+
+
 </style>
-
 <body>
-    
-
     <div id="container">
-  
-        <!--   <div class="dog dog1">
-            <img class="sunglasses" src="https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-black-sunglasses-eyewear-png-image_11671474.png">
-          </div>
-          <div class="dog dog2">
-            <div class="raritySquare"></div>
-            <div class="raritySquare"></div>
-            <div class="raritySquare"></div>
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/017/051/914/small_2x/boots-isolated-3d-rendering-png.png" class="boots">
-          </div> -->
-          
+
+
+        <div class="rectangle1">
+            </div>
+            <div class="paddywax">PADDYWAX</div>
+            <div class="underline">
+            <div class="star1">⋆</div>
+            <div class="scent">Wild Mushroom <div class="star2">⋆</div></div>
+            
         </div>
 
-        <script>
+            <div class="logo"></div>
+            
+        </div>
 
-const container = document.getElementById("container");
+            <!--  <svg width="106" height="101" viewBox="0 0 106 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M61.4397 4.77517C60.307 -0.485361 52.7963 -0.460672 51.6635 4.8073L43.2639 43.868L8.31014 21.8284C3.7878 18.9768 -1.476 24.2174 1.39437 28.7137L35.0554 81.4423C35.1887 81.673 35.3239 81.9035 35.461 82.1338C41.6496 92.5317 49.9198 99.4495 56.0813 100.054C57.3689 100.654 58.8817 101 60.5 101C62.3507 101 64.0632 100.548 65.4589 99.7798C71.405 98.2747 78.511 90.653 83.1975 79.9963C84.7409 76.4866 85.8732 72.9861 86.5978 69.6673L104.724 20.8516C106.586 15.8373 100.277 11.8512 96.4679 15.6352L69.5379 42.3865L61.4397 4.77517Z" fill="#C10404"/>
+                </svg> -->
+                
+
+            
+                        
+      
+       
 
 
-const spreadsheetID = `1RHYjRosGtHy5Ng2sk9TDFhXY6k0MF2B7yeUTWH6SOIY`
-let tabName = 'Dogs'
+
+
+
+        <BR><BR>
+
+            
+                
+
+</div>
+<script>
+    const container = document.getElementById("container");
+
+
+const spreadsheetID = `1rEoRUD45rFXWF9xQ7gwCt7aJNxQ5dDb5nmmA7lZ1wrA`
+let tabName = 'Candles'
 
 // format them into Ben's uri
 let opensheet_uri = `https://opensheet.elk.sh/${spreadsheetID}/${tabName}`;
@@ -104,33 +176,29 @@ fetch(opensheet_uri)
     .then(function (data) {
         console.log(data);
 				
-        for (let dog of data){
+        for (let candle of data){
             
-            let newDogDiv = document.createElement("DIV");
-            newDogDiv.classList.add("dog");
-            container.appendChild(newDogDiv);
+            let newCandleDiv = document.createElement("DIV");
+            newCandleDiv.classList.add("rectangle1");
+            newCandleDiv.classList.add("paddywax");
+            container.appendChild(newCandleDiv);
+
+            const season = rectangle1.Color;
+            const warmth = rectangle1.Color;
+
+            let newLogoDiv = document.createElement("DIV");
+            newLogoDiv.classList.add("logo");
+            container.appendChild(newLogoDiv);
+
+            const profile = logo.Profile;
+            const outdoorsiness = logo.Outdoorsiness;
           
-            
-            const color = dog.Color;
-            const clothing = dog.Clothing;
-            const size = parseFloat(dog.Size);
-            const rarity = parseInt(dog.Rarity);
-            const friendliness = parseInt(dog.Friendliness);
           
-          
-          
-            const divSize = map(size, 1, 5, 50, 200);
-            const divRoundness = map(friendliness, 1, 5, 0, 50);
-          
-          
-            newDogDiv.style.background = color;
-            newDogDiv.style.width = divSize + "px";
-            newDogDiv.style.height = divSize + "px";
-            newDogDiv.style.borderRadius = divRoundness + "%";
+        
           
           
           
-            for (let i=0; i<rarity; i++){
+          /* for (let i=0; i<rarity; i++){
               
               let newRarityDiv = document.createElement("DIV");
               newRarityDiv.classList.add("raritySquare");
@@ -139,24 +207,43 @@ fetch(opensheet_uri)
               newRarityDiv.style.transform = `translate(-50%, -50%) rotate(${Math.random() * 360}deg)`
               newDogDiv.appendChild(newRarityDiv);
               
-            }
+         }
+              */
           
           
           
-            if (clothing == "Boot"){
-                let bootImg = document.createElement("IMG");
-                bootImg.classList.add("boots");
-                bootImg.src = "https://static.vecteezy.com/system/resources/thumbnails/017/051/914/small_2x/boots-isolated-3d-rendering-png.png"
-                newDogDiv.appendChild(bootImg);
-            }
-          
-          
-            if (clothing == "Sunglasses"){
-                let newImg = document.createElement("IMG");
-                newImg.classList.add("sunglasses");
-                newImg.src = "https://png.pngtree.com/png-vector/20240207/ourmid/pngtree-black-sunglasses-eyewear-png-image_11671474.png"
-                newDogDiv.appendChild(newImg);
-            }
+            if (season == "Spring" && warmth == "Warm"){
+                document.getElementById("rectangle1").style.backgroundColor = "#92A740";
+                } else if (season == "Spring" && warmth == "Cool"){
+                    document.getElementById("rectangle1").style.backgroundColor = "#359A58";
+                } else if (season == "Spring/Summer" && warmth == "Warm"){
+                    document.getElementById("rectangle1").style.backgroundColor = "#FFDE72";
+                } else if (season == "Spring/Summer" && warmth == "Cool"){
+                    document.getElementById("rectangle1").style.backgroundColor = "#FFFBA8";
+                } else if (season == "Summer" && warmth == "Warm"){
+                    document.getElementById("rectangle1").style.backgroundColor = "#7D0011";
+                        } else if (season == "Summer" && warmth == "Cool"){
+                            document.getElementById("rectangle1").style.backgroundColor = "#FFA8AC";
+                        } else if (season == "Summer/Fall" && warmth == "Warm"){
+                            document.getElementById("rectangle1").style.backgroundColor = "#CF5458";
+                           }   else if (season == "Summer/Fall" && warmth == "Cool"){
+                                document.getElementById("rectangle1").style.backgroundColor = "#CF5458";
+                                } else if (season == "Fall" && warmth == "Warm"){
+                            document.getElementById("rectangle1").style.backgroundColor = "#402A2B";
+                                } else if (season == "Fall" && warmth == "Cool"){
+                                    document.getElementById("rectangle1").style.backgroundColor = "#FFC8AA";
+                                } else if (season == "Winter" && warmth == "Warm"){
+                                    document.getElementById("rectangle1").style.backgroundColor = "#9F9AFF";
+                                }    else if (season == "Winter" && warmth == "Cool"){
+                                        document.getElementById("rectangle1").style.backgroundColor = "#9ADBFF";
+                                    }
+        
+                                
+
+
+
+
+
             
           
             
@@ -177,7 +264,7 @@ fetch(opensheet_uri)
 function map(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
+</script>
 
-        </script>
 </body>
 </html>
