@@ -260,20 +260,28 @@ function getTextColor (season, warmth) {
 
  function getBackgroundImage (season, warmth, profile, outdoorsiness) {
     if (season == "Spring" && warmth == "Warm" && profile == "Woody" && outdoorsiness == "Seven") return "url('WoodySevenSpringWarm.svg')";
+    if (season == "Spring" && warmth == "Cool" && profile == "Fresh" && outdoorsiness == "Five") return "url('FreshFiveCoolSpring.svg')";
     if (season == "Spring" && warmth == "Cool" && profile == "Fresh" && outdoorsiness == "Nine") return "url('FreshNineSpringCool.svg')";
     if (season == "Spring" && warmth == "Cool" && profile == "Spice" && outdoorsiness == "Five") return "url('SpiceFiveSpringCool.svg')";
+    if (season == "Spring/Summer" && warmth == "Cool" && profile == "Fresh" && outdoorsiness == "Three") return "url('FreshThreeCoolSpringSummer.svg')";
     if (profile == "Sweet" && outdoorsiness == "Two") return "url('SweetTwo.svg')"; 
     if (season == "Spring/Summer" && warmth == "Cool" && profile == "Fresh" && outdoorsiness == "Four") return "url('FreshFourSpringSummerCool.svg')";
     if (season == "Summer" && warmth == "Warm" && profile == "Spice" && outdoorsiness == "Nine") return "url('SpiceNineSummerWarm.svg')";
+    if (season == "Summer" && warmth == "Cool" && profile == "Woody" && outdoorsiness == "Six") return "url('WoodySixSummerCool.svg')";
     if (season == "Summer" && warmth == "Cool" && profile == "Fresh" && outdoorsiness == "Three") return "url('FreshThreeSummerCool.svg')";
+    if (season == "Summer" && warmth == "Cool" && profile == "Fresh" && outdoorsiness == "Nine") return "url('FreshNineCoolSummer.svg')";
     if (season == "Summer" && warmth == "Cool" && profile == "Spice" && outdoorsiness == "Eight") return "url('SpiceEightSummerCool.svg')";
     if (season == "Summer/Fall" && warmth == "Warm" && profile == "Sweet" && outdoorsiness == "Eight") return "url('SweetEightSummerFallWarm.svg')";
+    if (season == "Summer/Fall" && warmth == "Warm" && profile == "Spice" && outdoorsiness == "Four") return "url('SpiceFourWarmSummerFall.svg')";
+    if (season == "Fall" && warmth == "Warm" && profile == "Woody" && outdoorsiness == "Seven") return "url('WoodySevenWarmFall.svg')";
+    if (season == "Fall" && warmth == "Warm" && profile == "Spice" && outdoorsiness == "Seven") return "url('SpiceSevenWarmFall.svg')";
     if (season == "Fall" && warmth == "Cool" && profile == "Spice" && outdoorsiness == "Four") return "url('SpiceFourFallCool.svg')";
     if (season == "Fall" && warmth == "Cool" && profile == "Woody" && outdoorsiness == "Six") return "url('WoodySixFallCool.svg')";
     if (season == "Summer" && warmth == "Both" && profile == "Spice" && outdoorsiness == "Six") return "url('SpiceSixSummerBoth.svg')";
     if (season == "Winter" && warmth == "Warm" && profile == "Woody" && outdoorsiness == "Nine") return "url('WoodyNineWinterWarm.svg')";
     if (season == "Winter" && warmth == "Warm" && profile == "Spice" && outdoorsiness == "Nine") return "url('SpiceNineWinterWarm.svg')";
-        if (season == "Winter" && warmth == "Cool" && profile == "Sweet" && outdoorsiness == "Nine") return "url('SweetNineWinterCool.svg')";
+    if (season == "Winter" && warmth == "Cool" && profile == "Sweet" && outdoorsiness == "Nine") return "url('SweetNineWinterCool.svg')";
+    if (season == "Spring/Summer" && warmth == "Warm" && profile == "Sweet" && outdoorsiness == "Eight") return "url('SweetEightWarmSpringSummer.svg')";
     
 
     return "url('WoodySevenSpringWarm.svg')"; // fallback

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🖤  Madeline's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="logotransp.png">
+    <title>Madeline's Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,12 +22,39 @@
 }
 
 .header:hover {
-    background: url(https://m.media-amazon.com/images/M/MV5BMTk0NTcyNTkwM15BMl5BanBnXkFtZTgwODg1NDAxNzE@._V1_.jpg);
+    /* background: url(https://m.media-amazon.com/images/M/MV5BMTk0NTcyNTkwM15BMl5BanBnXkFtZTgwODg1NDAxNzE@._V1_.jpg); */
     color:#00ff6e;
 }
 
 .header:hover .logo {
     border: 10px dotted #00ff6e;
+}
+
+.subheader {
+
+    position: relative;
+    left: 8px;
+}
+
+.bodydiv {
+
+    position: relative;
+    left: 8px;
+}
+
+.namediv {
+    background-color: #00ff6e;
+    border: 7px solid #000;
+    font-size: 60px;
+    width: 500px;
+    height: 10px;
+    transition: 500ms;
+}
+
+.namediv:hover {
+    background-color: #000;
+    border: 10px dotted #00ff6e;
+    height: 75px;
 }
 
 
@@ -35,6 +63,7 @@
         background-color: #000;
     border: 7px solid #00ff6e;
 position: fixed;
+top: 30px;
 right: 10px;
 height: 15vh;
 width: 15vh;
@@ -64,10 +93,58 @@ transition: 500ms;
     transition: 200ms;
 }
 
+.container {
+    width: 110%;
+  margin-top: 74px;
+  padding: 0px;
+  background-color: black;
+}
+
+.container > div {
+  display: inline-block;
+  vertical-align: top; 
+  background-color: #000;
+  border: 1px solid #000;
+  color: #00ff6e;
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 1;
+} 
+
+.container > div:hover {
+    opacity: 0.2;
+}
+
 .parent:hover img {
   opacity: 1;
   
 }
+
+/* .quincediv {
+    background-color: #000;
+    height: 100px;
+    width: 200px;
+    opacity: 1;
+}
+
+.quincediv:hover {
+    opacity: 0.2;
+}
+
+.tesladiv {
+    background-color: #000;
+    height: 700px;
+    width: 500px;
+    opacity: 1;
+}
+
+.tesladiv:hover {
+    opacity: 0.2;
+}
+    */ 
+
+
 
 @media (max-width: 768px) {
     body {
@@ -82,15 +159,50 @@ transition: 500ms;
     <BR>
         <div class="header">
 
-    Madeline Rael<BR>
-        Designer<BR>
-            New York, NY<BR>
+    <div class="namediv">Madeline Rael</div><BR>
+        <BR>
+        <div class="subheader">Designer<BR>
+            Brooklyn, NY<BR>
+            </div>
     </div>
 <BR>
-        <a href="index.html">Parsons</a><BR>
+    <div class="bodydiv">
+        <a href="index.html">Interaction & Coding</a><BR>
+          <a href="photo.htm">Photography</a><BR>
         <a href="about.htm">About</a>
+        
         <BR><BR>
+            <BR><BR>
+                <div class="container">
+                    <div><img src="03 Instagram Mockup7.png" height="800px"></div>
+                    <div><img src="Screenshot 2025-04-30 at 7.21.45 PM.png" height="200px"></div>
+                    <div><img src="Screenshot 2025-04-30 at 7.25.23 PM.png" height="100px"></div>
+                    <div><img src="Screenshot 2025-04-30 at 7.14.57 PM.png" height="500px"></div>
+                    <div><img src="Screenshot 2025-04-30 at 7.37.24 PM.png" height="700px"></div>
+                    <div><img src="Screenshot 2025-04-30 at 6.53.37 PM.png" height="500px"></div>
+                    <div><img src="Screenshot 2025-04-30 at 7.19.14 PM.png" height="250px"></div>
+                    <div><img src="Screenshot 2025-04-30 at 7.12.07 PM.png" height="400px"></div>
+                    </div>
 
+                
+
+<!-- <center>
+<div class="container">
+    <div><img src="Screenshot 2025-04-30 at 6.39.24 PM.png" height="100px"></div>
+    <div><img src="Screenshot 2025-04-30 at 6.42.36 PM.png" height="700px"></div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+  </div>
+</center> -->
+
+  <BR><BR>
+            <a href="https://www.are.na/madeline-rael/channels">Are.na</a><BR>
+            <a href="https://www.instagram.com/madmrael/">Instagram</a>
+</div>
             <center>
                 <BR><BR><BR>
                 <div class="parent">
