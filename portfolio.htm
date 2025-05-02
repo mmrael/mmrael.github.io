@@ -112,9 +112,32 @@ transition: 500ms;
   opacity: 1;
 } 
 
-.container > div:hover {
-    opacity: 0.2;
+.hover-box {
+  position: relative;
+  display: inline-block;
 }
+
+.image-wrapper:hover {
+  opacity: 0.2;
+}
+
+.caption {
+  display: none;
+  position: absolute;
+  top: 20px;
+  background-color: #000;
+  color: rgba(0, 255, 110, 0.9);
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 15px;
+  z-index: 10;
+}
+
+.hover-box:hover .caption {
+  display: block;
+}
+
+
 
 .parent:hover img {
   opacity: 1;
@@ -150,6 +173,22 @@ transition: 500ms;
     body {
       background-color: #000; 
     }
+
+    .logo {
+        background-color: #000;
+    border: 7px dotted #00ff6e;
+position: fixed;
+top: 70px;
+left: 10px;
+height: 15vh;
+width: 15vh;
+transition: 500ms;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
     }
 </style>
 
@@ -174,14 +213,62 @@ transition: 500ms;
 <BR><BR>
     <BR><BR>
                 <div class="container">
-                    <div><img src="03 Instagram Mockup7.png" height="800px"></div>
-                    <div><img src="Screenshot 2025-04-30 at 7.21.45 PM.png" height="200px"></div>
-                    <div><img src="Screenshot 2025-04-30 at 7.25.23 PM.png" height="100px"></div>
-                    <div><img src="Screenshot 2025-04-30 at 7.14.57 PM.png" height="500px"></div>
-                    <div><img src="Screenshot 2025-04-30 at 7.37.24 PM.png" height="700px"></div>
-                    <div><img src="Screenshot 2025-04-30 at 6.53.37 PM.png" height="500px"></div>
-                    <div><img src="Screenshot 2025-04-30 at 7.19.14 PM.png" height="250px"></div>
-                    <div><img src="Screenshot 2025-04-30 at 7.12.07 PM.png" height="400px"></div>
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                        <img src="03 Instagram Mockup7.png" height="800px">
+                        </div>
+                        <div class="caption">✴ Event Promotion<BR>✴ Scales of Interaction</div>
+                      </div>
+
+                      <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-05-01 at 3.53.20 PM.png" height="200px">
+                </div>
+                <div class="caption">✴ Rebrand for "Quince" Mexican Cuisine<BR>✴ Branding, Typography</div>
+              </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 11.55.28 PM.png" height="100px">
+                    </div>
+                    <div class="caption">✴ Rebrand for "Quince"<BR>✴ Branding, Typography</div>
+                      </div>
+
+                      <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.14.57 PM.png" height="500px">
+                </div>
+                    <div class="caption">✴ Radiohead at Manhattan Center, Dec. 19, 1997<BR>✴ Poster Concept</div>
+                </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.37.24 PM.png" height="700px">
+                </div>
+                <div class="caption">✴ Radiohead at Manhattan Center, Dec. 19, 1997<BR>✴ Poster Concept</div>
+            </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 6.53.37 PM.png" height="500px">
+                </div>
+                <div class="caption">✴ Electrical Engineering; Science Pioneers: Nikola Tesla<BR>✴ Book Cover Concept</div>
+            </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.19.14 PM.png" height="250px">
+                </div>
+                <div class="caption">✴ No Doubt at UNO Lakefront Arena, Apr. 27, 1997<BR>✴ Poster Concept</div>
+            </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.12.07 PM.png" height="400px">
+                </div>
+                <div class="caption">✴ <i>Doppelgänger: Typographic Meditations on the Double</i><BR>✴ Booklet</div>
+        </div>
+                
                     </div>
 
                 
