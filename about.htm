@@ -11,14 +11,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <style>
+    body {
+        cursor: url(/Users/mmrael/Documents/GitHub/mmrael.github.io/Star3.svg), default;
+    }
+
+    a:hover {
+        cursor: url(/Users/mmrael/Documents/GitHub/mmrael.github.io/Star4.svg), default;
+    }
+
 body:hover {
     color: #00ff6e;
+}
+
+:root {
+  --highlight-color: null;
+}
+
+::selection {
+  background: var(--highlight-color);
 }
 
 .bodydiv {
     position: absolute;
     left: 30px;
 }
+
+
+
+@media (max-width: 2000px) {
+}
+body {
+        cursor: url(/Users/mmrael/Documents/GitHub/mmrael.github.io/Star3.svg), default;
+    }
+      a:hover {
+        color: #000;
+        background-color: #000;
+        cursor: url(/Users/mmrael/Documents/GitHub/mmrael.github.io/Star4.svg), default;
+    
+    }
+
 
 @media (max-width: 768px) {
     body {
@@ -58,3 +89,14 @@ body:hover {
                     <a href="portfolio.htm">← Back to portfolio</a>
 </div>
 </body>
+</html>
+
+<script type="text/javascript">
+    const colors = ["#252525", "#00ff6e", "#002e1e", "#ffffff", "#8a8a8a"];
+
+window.addEventListener("mousedown", (e) => {
+  const color = colors.shift();
+  document.documentElement.style.setProperty("--highlight-color", color);
+  colors.push(color);
+});
+</script>
