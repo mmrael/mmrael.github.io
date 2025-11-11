@@ -8,12 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amarante&family=Calistoga&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 </head>
 <style>
 body {
     background: black;
     cursor: url(https://i.imgur.com/YVV7Cf4.png), default;
+}
+
+a:visited {
+    color: #8D1910;
+    font-style: normal;
 }
 
 #table {
@@ -29,34 +37,66 @@ body {
     top: 225px;
     right: -15px;
     height: 75px;
-    width: 284px;
+    width: 984px;
     font-family: 'Amarante', serif;
     font-weight: 500;
+    border: 0px solid #8D1910;
 font-style: normal;
-font-size: 155px;
+font-size: 115px;
 line-height: 1;
 text-align: left;
 color: #fff4dc;
--webkit-text-stroke-width: 4.4px;
+-webkit-text-stroke-width: 3px;
 -webkit-text-stroke-color: #8D1910;
 }
 
 #subtitlediv {
     position: relative;
-    top: 475px;
+    top: 390px;
     right: -25px;
     height: 75px;
     width: 574px;
     border: 0px solid #8D1910;
-    font-family: 'Calisto MT', serif;
+    font-family: 'Libre Caslon Text', serif;
     font-weight: 400;
 font-style: normal;
 font-size: 18px;
-line-height: normal;
+line-height: 1.5;
 text-align: left;
 color: #fff4dc;
 -webkit-text-stroke-width: 0.5px;
 -webkit-text-stroke-color: #8D1910;
+}
+
+.arrowdiv {
+    position: relative;
+    top: 500px;
+    left: 1255px;
+    height: 75px;
+    width: 100px;
+    font-family: 'Amarante', serif;
+    font-weight: 500;
+    border: 0px solid #8D1910;
+font-style: normal;
+font-size: 50px;
+line-height: 1;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 5px;
+-webkit-text-stroke-color: #8D1910;
+transition: 0.5s ease-in-out;
+}
+
+.arrowdiv:hover {
+    transform:scale(1.7);
+color: #8D1910;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #fff4dc;
+}
+
+#table2 .arrowdiv {
+  top: 75px;
+  /* instead of 1255px */
 }
 
 #table2 {
@@ -72,11 +112,86 @@ color: #fff4dc;
 #textboxtable2 {
     position: relative;
     top: 475px;
+    right: -75px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+}
+
+#textbox2table2 {
+    position: relative;
+    top: 35px;
+    right: -875px;
+    height: 475px;
+    width: 560px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 18px;
+line-height: 2.0;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.2px;
+-webkit-text-stroke-color: #8D1910;
+}
+
+#medievaltable {
+    position: absolute;
+    top: 1006px;
+    left: 0px;
+    background: url(Saltburn\ bg.png) black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+
+}
+
+#medievaltitlediv {
+    position: relative;
+    top: 225px;
+    right: -300px;
+    height: 75px;
+    width: 884px;
+    font-family: 'Amarante', serif;
+    font-weight: 500;
+    border: 0px solid #8D1910;
+font-style: normal;
+font-size: 125px;
+line-height: 1;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 4.4px;
+-webkit-text-stroke-color: #8D1910;
+}
+
+#medievaltable2 {
+    position: absolute;
+    top: 1006px;
+    left: 1922px;
+    background: url(Saltburn\ bg.png) black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+}
+
+#medievaltextboxtable2 {
+    position: relative;
+    top: 675px;
     right: -25px;
     height: 75px;
     width: 574px;
     border: 0px solid #8D1910;
-    font-family: 'Calisto MT', serif;
+    font-family: 'Libre Caslon Text', serif;
     font-weight: 400;
 font-style: normal;
 font-size: 48px;
@@ -87,25 +202,474 @@ color: #fff4dc;
 -webkit-text-stroke-color: #8D1910;
 
 }
+
+#entrytitlediv {
+    position: relative;
+    top: 5px;
+    right: -300px;
+    height: 75px;
+    width: 884px;
+    font-family: 'Amarante', serif;
+    font-weight: 500;
+    border: 0px solid #8D1910;
+font-style: normal;
+font-size: 107px;
+line-height: 1;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 4.4px;
+-webkit-text-stroke-color: #8D1910;
+transition: 2s ease-in-out;
+}
+
+#entrytitledivlindisfarne {
+    position: relative;
+    top: 5px;
+    right: -280px;
+    height: 75px;
+    width: 984px;
+    font-family: 'Amarante', serif;
+    font-weight: 500;
+    border: 0px solid #8D1910;
+font-style: normal;
+font-size: 107px;
+line-height: 1;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 4.4px;
+-webkit-text-stroke-color: #8D1910;
+transition: 2s ease-in-out;
+}
+
+#entrytitlediv:hover {
+    letter-spacing: 10px;
+}
+
+#imagediv {
+    position: relative;
+    top: 85px;
+    right: -450px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+transition: 1s ease;
+}
+
+#imagediv:hover {
+    transform: scale(1.7);
+}
+
+#entrytextboxdiv {
+    position: relative;
+    top: 85px;
+    right: -450px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+}
+
+#entrytextboxdiv2 {
+    position: relative;
+    top: 375px;
+    right: -455px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+transition: 1s ease;
+}
+
+#imagediv:hover + #entrytextboxdiv2 {
+  /* CSS properties to change on hover */
+  background-color: #8D1910;
+}
+
+#medievaltable3 {
+    position: absolute;
+    top: 1006px;
+    left: 3842px;
+    background: url(Saltburn\ bg.png) black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+}
+
+#medievaltextboxtable3 {
+    position: relative;
+    top: 675px;
+    right: -25px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+
+}
+
+#medievaltable4 {
+    position: absolute;
+    top: 1006px;
+    left: 5764px;
+    background: url(Saltburn\ bg.png) black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+}
+
+#medievaltextboxtable4 {
+    position: relative;
+    top: 675px;
+    right: -25px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+
+}
+
+#medievaltable5 {
+    position: absolute;
+    top: 1006px;
+    left: 7686px;
+    background: url(Saltburn\ bg.png) black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+}
+
+#medievaltextboxtable5 {
+    position: relative;
+    top: 675px;
+    right: -25px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+
+}
+
+#medievaltable6 {
+    position: absolute;
+    top: 1006px;
+    left: 9608px;
+    background: url(Saltburn\ bg.png) black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+}
+
+#medievaltextboxtable6 {
+    position: relative;
+    top: 675px;
+    right: -25px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+
+}
+
+#nineteenthcenturytable {
+    position: absolute;
+    top: 2006px;
+    left: 0px;
+    background: url(Saltburn\ bg.png) black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+
+}
+
+#nineteenthcenturytitlediv {
+    position: relative;
+    top: 225px;
+    right: -300px;
+    height: 75px;
+    width: 884px;
+    font-family: 'Amarante', serif;
+    font-weight: 500;
+    border: 0px solid #8D1910;
+font-style: normal;
+font-size: 125px;
+line-height: 1;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 4.4px;
+-webkit-text-stroke-color: #8D1910;
+}
+
+
+.timelinebox {
+    position: absolute;
+    top: -105px;
+    left: 1200px;
+    height: 25px;
+    width: 200px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-style: normal;
+font-size: 18px;
+letter-spacing: 0.1em;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+background: none;
+transition: 1s ease;
+}
+
+.timelinebox:hover {
+    font-family: 'Libre Caslon Text', serif;
+    color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  color: #fff4dc;
+  -webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+  background-color: #8D1910;
+  border: 2px dotted #fff4dc;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: 80%;
+  min-width: 275px;
+  left: 1200px;
+  top: -75px;
+  z-index: 99;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.dropdown-content a {
+  color: #fff4dc;
+  font-family: 'Amarante', serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 1s ease;
+}
+
+.dropdown-content:hover {
+    color: #8D1910;
+}
+
+.dropdown-content a:hover {
+    color: #fff4dc;
+    letter-spacing: 10px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+color: #8D1910;
+opacity: 1;
+}
 </style>
 <body>
 
 <div id="table">
 <div id="titlediv">
 
-    MEDIEVAL<BR>
-        DESIGN
+    THE MYTH OF<BR>
+        MEDIEVAL DESIGN
 </div>
 <div id="subtitlediv">
-    <b>Design trends</b> of the <b>Medieval Period, how these trends reemerged in Western design and popular culture of the 1960s through the 1980s,</b> and how these patterns inform our understanding of Medieval history today.  
+    <b>Cataloguing major design trends</b> of the <b>Medieval Period,<BR> how these trends reemerged in Western design and popular culture,</b> and how these patterns <b>inform our understanding</b> of Medieval history today.  
+</div>
+<div class="arrowdiv">
+    <a href="#table2">⤇⤇</a>
+</div>
+<div class="dropdown">
+<button class="timelinebox">
+    NAVIGATION
+</button>
+<div class="dropdown-content">
+    <a href="#table2">INTRO</a>
+    <a href="#medievaltable">MEDIEVAL</a>
+    <a href="#nineteenthcenturytable">19th CENTURY</a>
+    <a href="financials.htm">1960s-1980s</a>
+    <a href="financials.htm">2025</a>
+</div>
+</div>
 </div>
 
-</div>
+<BR>
 
+    <a id="table2" class="anchor" style="position: absolute;"></a>
 <div id="table2">
     <div id="textboxtable2">
-What do we think of when we think of 'Medieval' desgin?
+What do we think of when we think of 'Medieval' design?
 </div>
+<div id="textbox2table2">
+    Stained glass? The blood of knights spilled under lapis skies? Twinkling stars? The robes of kings alongside the metal of armour? <BR><BR>
+
+What about dragons? Holy grails? Caverns concealing mountains of gold?<BR><BR>
+
+The Consumer Aesthetics Research Institute identifies a design trend they call ‘Medieval Revival,’ dated from the mid-1950s through the mid-1970s.<BR><BR>
+
+But one doesn’t have to peruse the Institute’s archive to recall the boom in pop culture.
+</div>
+
+<div class="arrowdiv">
+    <a href="#table2">⤇⤇</a>
+</div>
+
+</div>
+
+
+<a id="medievaltable" class="anchor" style="position: absolute;"></a>
+<div id="medievaltable">
+    <div id="medievaltitlediv">
+PRE-MEDIEVAL & MEDIEVAL
+    </div>
+
+</div>
+
+<div id="medievaltable2">
+    <div id="medievaltextboxtable2">
+    313 C.E.
+</div>
+<div id="entrytitlediv">
+    Edict of Milan
+</div>
+<div id="entrytextboxdiv">
+    Emperor Constantine legalizes Christianity in the Roman Empire.
+</div>
+<div id="entrytextboxdiv2">
+    Christian art flourishes openly for the first time.
+</div>
+</div>
+
+<div id="medievaltable3">
+    <div id="medievaltextboxtable3">
+    c. 400 C.E.
+</div>
+<div id="entrytitlediv">
+    Vienna Genesis
+</div>
+<div id="imagediv">
+<img src="https://www.onb.ac.at/fileadmin/_processed_/d/b/csm_Titelbild_4b224024be.jpg" height="300px">
+</div>
+<div id="entrytextboxdiv2">
+    One of the oldest surviving illustrated Biblical manuscripts.
+</div>
+</div>
+
+
+<div id="medievaltable4">
+    <div id="medievaltextboxtable4">
+        c. 410 - 500 
+    </div>
+            <div id="entrytextboxdiv">
+                Roman legions withdraw from Britain.
+            </div>
+            <div id="entrytextboxdiv2">
+                Britain becomes vulnerable to Saxon invasions.
+            </div>
+</div>
+
+
+<div id="medievaltable5">
+    <div id="medievaltextboxtable5">
+        518 C.E.
+    </div>
+            <div id="entrytextboxdiv">
+                Battle of Badon
+            </div>
+            <div id="entrytextboxdiv2">
+                The legendary King Arthur is supposed to have led the Britons against the Saxons.
+            </div>
+</div>
+
+<div id="medievaltable6">
+    <div id="medievaltextboxtable6">
+        c. 700 C.E.
+    </div>
+    <div id="entrytitledivlindisfarne">
+        Lindisfarne Gospels
+    </div>
+    <div id="imagediv">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/LindisfarneFol27rIncipitMatt.jpg" height="300px">
+        </div>
+            <div id="entrytextboxdiv2">
+                A masterpiece of insular manuscript illumination in Anglo-Saxon England.
+            </div>
+</div>
+
+
+<a id="nineteenthcenturytable" class="anchor" style="position: absolute;"></a>
+<div id="nineteenthcenturytable">
+    <div id="nineteenthcenturytitlediv">
+19th CENTURY
+    </div>
 
 </div>
 
