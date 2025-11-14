@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Calistoga&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/tff4naz.css">
 
 </head>
 <style>
@@ -19,14 +20,15 @@ body {
     cursor: url(https://i.imgur.com/YVV7Cf4.png), default;
 }
 
-a:visited {
+a {
     color: #8D1910;
     font-style: normal;
+    text-decoration: none;
 }
 
 #table {
     position: absolute;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -34,13 +36,14 @@ a:visited {
 
 #titlediv {
     position: relative;
-    top: 225px;
+    top: 100px;
     right: -15px;
     height: 75px;
     width: 984px;
-    font-family: 'Amarante', serif;
+    font-family: "libra-mn", sans-serif;
     font-weight: 500;
     border: 0px solid #8D1910;
+    text-transform: uppercase;
 font-style: normal;
 font-size: 115px;
 line-height: 1;
@@ -49,6 +52,28 @@ color: #fff4dc;
 -webkit-text-stroke-width: 3px;
 -webkit-text-stroke-color: #8D1910;
 }
+
+    /*     top: 225px;
+    font-family: "Amarante", serif; 
+    font-size: 115px;
+    */
+
+    #imagedivtitle {
+        top: -200px;
+        left: 515px;
+        position: absolute;
+        height: 1000px;
+        width: 500px;
+        border: 1px solid #8D1910;
+        z-index: 0.1;
+opacity: 0.4;
+transition: 1s ease-in-out;
+
+    }
+
+    #imagedivtitle:hover {
+opacity: 1;
+    }
 
 #subtitlediv {
     position: relative;
@@ -103,10 +128,20 @@ color: #8D1910;
     position: absolute;
     top: 6px;
     left: 1922px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
+}
+
+#table3 {
+    position: absolute;
+    top: 6px;
+    left: 1920px;
+    background: /* url(Saltburn\ bg.png)*/ black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px; 
 }
 
 #textboxtable2 {
@@ -127,6 +162,16 @@ color: #fff4dc;
 -webkit-text-stroke-color: #8D1910;
 }
 
+#imagetable2 {
+    position: absolute;
+    top: 5px;
+    left: 70px;
+    height: 500px;
+    width: 574px;
+    border: 0px solid #8D1910;
+
+}
+
 #textbox2table2 {
     position: relative;
     top: 35px;
@@ -145,11 +190,29 @@ color: #fff4dc;
 -webkit-text-stroke-color: #8D1910;
 }
 
+#textboxtable3 {
+    position: relative;
+    top: 75px;
+    right: -875px;
+    height: 475px;
+    width: 545px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 18px;
+line-height: 2.0;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.2px;
+-webkit-text-stroke-color: #8D1910;
+}
+
 #medievaltable {
     position: absolute;
     top: 1006px;
     left: 0px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -178,7 +241,7 @@ color: #fff4dc;
     position: absolute;
     top: 1006px;
     left: 1922px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -314,7 +377,7 @@ transition: 1s ease;
     position: absolute;
     top: 1006px;
     left: 3842px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -343,7 +406,7 @@ color: #fff4dc;
     position: absolute;
     top: 1006px;
     left: 5764px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -372,7 +435,7 @@ color: #fff4dc;
     position: absolute;
     top: 1006px;
     left: 7686px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -401,7 +464,7 @@ color: #fff4dc;
     position: absolute;
     top: 1006px;
     left: 9608px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/ black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -430,7 +493,7 @@ color: #fff4dc;
     position: absolute;
     top: 2006px;
     left: 0px;
-    background: url(Saltburn\ bg.png) black;
+    background: /* url(Saltburn\ bg.png)*/  black;
     border: 0px solid #8D1910;
     height: 750px;
     width: 1920px;
@@ -458,9 +521,9 @@ color: #fff4dc;
 
 .timelinebox {
     position: absolute;
-    top: -105px;
+    top: -165px;
     left: 1200px;
-    height: 25px;
+    height: 125px;
     width: 200px;
     border: 0px solid #8D1910;
     font-family: 'Libre Caslon Text', serif;
@@ -505,7 +568,7 @@ transition: 1s ease;
   top: -75px;
   z-index: 99;
   opacity: 0;
-  transition: 1s ease;
+  transition: 2s ease;
 }
 
 .dropdown-content a {
@@ -536,6 +599,9 @@ opacity: 1;
 <body>
 
 <div id="table">
+    <div id="imagedivtitle">
+        <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/344/2024/07/21201944/donkey-skin-poster-614x1024.jpg">
+    </div>
 <div id="titlediv">
 
     THE MYTH OF<BR>
@@ -549,7 +615,7 @@ opacity: 1;
 </div>
 <div class="dropdown">
 <button class="timelinebox">
-    NAVIGATION
+    TIMELINE
 </button>
 <div class="dropdown-content">
     <a href="#table2">INTRO</a>
@@ -565,6 +631,9 @@ opacity: 1;
 
     <a id="table2" class="anchor" style="position: absolute;"></a>
 <div id="table2">
+    <div id="imagetable2">
+        <img src="https://images.squarespace-cdn.com/content/v1/5353cb51e4b0c64d5e6e0410/1590638326780-Q05OGDUKWLOGWMW623WK/Angel-Oakridge.jpg" height="500px">
+    </div>
     <div id="textboxtable2">
 What do we think of when we think of 'Medieval' design?
 </div>
@@ -579,7 +648,18 @@ But one doesn’t have to peruse the Institute’s archive to recall the boom in
 </div>
 
 <div class="arrowdiv">
-    <a href="#table2">⤇⤇</a>
+    <a href="#table3">⤇⤇</a>
+</div>
+
+<a id="table3" class="anchor" style="position: absolute;"></a>
+<div id="table3">
+    <div id="textboxtable3">
+        The epics of mid-century Hollywood gave us historical dramas <i></i>A Man for All Seasons</i> (1966) and The Lion in Winter (1968), which then gave way to medieval fantasy films such Camelot (1967), Monty Python and the Holy Grail (1975), the Rankin/Bass The Hobbit (1977) and the Ralph Bakshi-directed The Lord of the Rings (1978), and Excalibur (1981).<BR><BR>
+            Dungeons & Dragons emerged in 1974 – and reemerged into mainstream recollection with the Duffer Brother’s ‘80s revival Stranger Things.
+    </div>
+    <div class="arrowdiv">
+        <a href="#table4">⤇⤇</a>
+    </div>
 </div>
 
 </div>
