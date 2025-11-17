@@ -478,7 +478,7 @@ transition: 2s ease-in-out;
     font-weight: 500;
     border: 0px solid #8D1910;
 font-style: normal;
-font-size: 107px;
+font-size: 85px;
 line-height: 1;
 text-align: center;
 color: #fff4dc;
@@ -512,6 +512,29 @@ transition: 1s ease;
 
 #imagediv:hover {
     transform: scale(1.7);
+}
+
+#imagediv2 {
+    position: relative;
+    top: 85px;
+    right: -775px;
+    height: 300px;
+    width: 300px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: center;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+transition: 1s ease;
+}
+
+#imagediv2:hover {
+    transform: scale(2.0);
 }
 
 #entrytextboxdiv {
@@ -552,6 +575,11 @@ transition: 1s ease;
 }
 
 #imagediv:hover + #entrytextboxdiv2 {
+  /* CSS properties to change on hover */
+  background-color: #8D1910;
+}
+
+#imagediv2:hover + #entrytextboxdiv2 {
   /* CSS properties to change on hover */
   background-color: #8D1910;
 }
@@ -654,6 +682,64 @@ color: #fff4dc;
 }
 
 #medievaltextboxtable6 {
+    position: relative;
+    top: 675px;
+    right: -25px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+
+}
+
+#medievaltable7 {
+    position: absolute;
+    top: 1006px;
+    left: 11528px;
+    background: /* url(Saltburn\ bg.png)*/ black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+}
+
+#medievaltextboxtable7 {
+    position: relative;
+    top: 675px;
+    right: -25px;
+    height: 75px;
+    width: 574px;
+    border: 0px solid #8D1910;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+font-style: normal;
+font-size: 48px;
+line-height: normal;
+text-align: left;
+color: #fff4dc;
+-webkit-text-stroke-width: 0.5px;
+-webkit-text-stroke-color: #8D1910;
+
+}
+
+#medievaltable8 {
+    position: absolute;
+    top: 1006px;
+    left: 13448px;
+    background: /* url(Saltburn\ bg.png)*/ black;
+    border: 0px solid #8D1910;
+    height: 750px;
+    width: 1920px;
+}
+
+#medievaltextboxtable8 {
     position: relative;
     top: 675px;
     right: -25px;
@@ -928,13 +1014,16 @@ PRE-MEDIEVAL & MEDIEVAL
 <div id="entrytitlediv">
     Vienna Genesis
 </div>
-<div id="imagediv">
+<div id="imagediv" style="left: 250px;">
 <img src="https://www.onb.ac.at/fileadmin/_processed_/d/b/csm_Titelbild_4b224024be.jpg" height="300px">
 </div>
-<div id="entrytextboxdiv2">
+<div id="imagediv2" style="top: 10px; left: 700xpx;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/ViennGenFol12vJacob.jpg" height="300px">
+</div>
+<div id="entrytextboxdiv2" style="top: 75px; right: -455px;">
     One of the oldest surviving illustrated Biblical manuscripts.
 </div>
-<div class="arrowdivmed2">
+<div class="arrowdivmed2" style="top: 50px;">
     <a href="#medievaltable4">⤇⤇</a>
 </div>
 </div>
@@ -950,6 +1039,9 @@ PRE-MEDIEVAL & MEDIEVAL
             <div id="entrytextboxdiv2">
                 Britain becomes vulnerable to Saxon invasions.
             </div>
+            <div class="arrowdivmed2">
+                <a href="#medievaltable5">⤇⤇</a>
+            </div>
 </div>
 
 
@@ -962,6 +1054,9 @@ PRE-MEDIEVAL & MEDIEVAL
             </div>
             <div id="entrytextboxdiv2">
                 The legendary King Arthur is supposed to have led the Britons against the Saxons.
+            </div>
+            <div class="arrowdivmed2">
+                <a href="#medievaltable6">⤇⤇</a>
             </div>
 </div>
 
@@ -977,6 +1072,45 @@ PRE-MEDIEVAL & MEDIEVAL
         </div>
             <div id="entrytextboxdiv2">
                 A masterpiece of insular manuscript illumination in Anglo-Saxon England.
+            </div>
+            <div class="arrowdivmed2">
+                <a href="#medievaltable7">⤇⤇</a>
+            </div>
+</div>
+
+<div id="medievaltable7">
+    <div id="medievaltextboxtable7">
+        c. 816-35
+    </div>
+    <div id="entrytitlediv">
+        Ebbo Gospels
+    </div>
+    <div id="imagediv">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Ebbo_Gospels_St_Mark.jpg/960px-Ebbo_Gospels_St_Mark.jpg" height="300px">
+        </div>
+            <div id="entrytextboxdiv2">
+                Text here
+            </div>
+            <div class="arrowdivmed2">
+                <a href="#medievaltable8">⤇⤇</a>
+            </div>
+</div>
+
+<div id="medievaltable8">
+    <div id="medievaltextboxtable8">
+        c. 820
+    </div>
+    <div id="entrytitlediv">
+        Utrecht Psalter
+    </div>
+    <div id="imagediv">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Utrecht104.jpg/960px-Utrecht104.jpg" height="300px">
+        </div>
+            <div id="entrytextboxdiv2">
+                Text here
+            </div>
+            <div class="arrowdivmed2">
+                <a href="#medievaltable8">⤇⤇</a>
             </div>
 </div>
 
