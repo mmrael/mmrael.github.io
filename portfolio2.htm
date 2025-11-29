@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logotransp.png">
+    <title>Madeline Rael</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+    cursor: url(https://i.imgur.com/Wb20DVb.png), default;
+}
+
+:root {
+  --highlight-color: null;
+}
+
+::selection {
+  background: var(--highlight-color);
+}
+
+.header:hover {
+    /* background: url(https://m.media-amazon.com/images/M/MV5BMTk0NTcyNTkwM15BMl5BanBnXkFtZTgwODg1NDAxNzE@._V1_.jpg); */
+    color:#00ff6e;
+}
+
+.header:hover .logo {
+    border: 10px dotted #00ff6e;
+}
+
+.subheader {
+
+    position: relative;
+    left: 8px;
+}
+
+.bodydiv {
+    position: relative;
+    left: 8px;
+}
+
+.namediv {
+    background-color: #00ff6e;
+    border: 7px solid #000;
+    font-size: 60px;
+    width: 500px;
+    height: 10px;
+    transition: 500ms;
+}
+
+.namediv:hover {
+    background-color: #000;
+    border: 10px dotted #00ff6e;
+    height: 75px;
+}
+
+
+
+    .logo {
+        background-color: #000;
+    border: 10px dotted #00ff6e;
+position: fixed;
+top: 30px;
+right: 10px;
+height: 15vh;
+width: 15vh;
+transition: 500ms;
+    }
+
+    .logo:hover {
+        border: 9px solid #00ff6e;
+    }
+
+    .parent {
+	background-color: #000;
+	padding: 30px;
+	width: 450px;
+	margin: 30px;
+  font-family: sans-serif;
+}
+
+.asavajda {
+	width: 100vw;
+	opacity: 0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	pointer-events: none;
+    transition: 200ms;
+}
+
+.container {
+    width: 100%;
+  margin-top: 74px;
+  padding: 0px;
+  background-color: black;
+}
+
+.container > div {
+  display: inline-block;
+  vertical-align: top; 
+  background-color: #000;
+  border: 1px solid #000;
+  color: #00ff6e;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 1;
+} 
+
+.hover-box {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper:hover {
+  opacity: 0.5;
+  outline: 8px dotted #00ff6e; /* shows outside the image */
+  outline-offset: 8px; /* space between image and outline */
+}
+
+.caption {
+  display: none;
+  position: absolute;
+  top: 20px;
+  background-color: #000;
+  color: rgba(0, 255, 110, 0.9);
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 15px;
+  z-index: 10;
+}
+
+.hover-box:hover .caption {
+  display: block;
+}
+
+
+
+.parent:hover img {
+  opacity: 1;
+  
+}
+
+/* .quincediv {
+    background-color: #000;
+    height: 100px;
+    width: 200px;
+    opacity: 1;
+}
+
+.quincediv:hover {
+    opacity: 0.2;
+}
+
+.tesladiv {
+    background-color: #000;
+    height: 700px;
+    width: 500px;
+    opacity: 1;
+}
+
+.tesladiv:hover {
+    opacity: 0.2;
+}
+    */ 
+
+    @media (max-width: 2000px) {
+}
+      a:hover {
+        color: #000;
+        background-color: #000;
+        cursor: url(https://i.imgur.com/Me2o3vx.png), default;
+    
+    }
+
+@media (max-width: 844px) {
+    body {
+      background-color: #000; 
+    }
+
+
+    .namediv {
+    background-color: #00ff6e;
+    border: 7px solid #000;
+    font-size: 60px;
+    width: 500px;
+    height: 10px;
+    transition: 500ms;
+}
+
+    .logo {
+        background-color: #000;
+    border: 7px dotted #00ff6e;
+position: fixed;
+top: 30px;
+right: 10px;
+height: 35vh;
+width: 35vh;
+transition: 500ms;
+    }
+
+    .subheader {
+        font-size: 12px;
+    }
+
+    .bodydiv {
+        font-size: 12px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    }
+
+    @media (max-width: 390px) {
+    body {
+      background-color: #000; 
+    }
+
+
+    .namediv {
+    background-color: #00ff6e;
+    border: 7px solid #000;
+    font-size: 37px;
+    width: 300px;
+    height: 5px;
+    transition: 500ms;
+}
+
+    .logo {
+        background-color: #000;
+    border: 5px dotted #00ff6e;
+position: fixed;
+top: 43px;
+right: 10px;
+height: 10vh;
+width: 10vh;
+transition: 500ms;
+    }
+
+    .subheader {
+        font-size: 15px;
+    }
+
+    .bodydiv {
+        font-size: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    }
+</style>
+
+<body>
+    <div class="imgheader"></div>
+    <div class="logo"><center><a href="portfolio.htm"><img src="https://i.imgur.com/pvrJ4eX.png" height="100" width="100"></a></center></div>
+    <BR>
+        <div class="header">
+
+    <div class="namediv">Madeline Rael</div><BR>
+        <BR>
+        <div class="subheader">Designer<BR>
+            Brooklyn, NY<BR>
+            </div>
+    </div>
+<BR>
+    <div class="bodydiv">
+        <a href="index.html">Coding & Interaction</a><BR>
+          <a href="photo.htm">Photography</a><BR>
+        <a href="about.htm">About</a>
+        
+<BR><BR>
+    <BR><BR>
+        <center>
+                <div class="container">
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="https://i.imgur.com/sz3d4ZA.png" height="200px">
+                        </div>
+                        <div class="caption">✴ <i>HAMLET</i> <BR>✴ Typeface Design</div>
+                        </div>
+                        
+
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+<img src="https://i.imgur.com/NwdVRmz.png" height="300px">
+                        </div>
+                        <div class="caption">✴ <i>Southwest Art</i> Magazine<BR>✴ Periodical Rebrand</div>
+                        </div>
+
+
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                        <img src="03 Instagram Mockup7.png" height="800px">
+                        </div>
+                        <div class="caption">✴ Event Promotion<BR>✴ Scales of Interaction</div>
+                      </div>
+
+                      <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-05-01 at 3.53.20 PM.png" height="200px">
+                </div>
+                <div class="caption">✴ Rebrand for "Quince" Mexican Cuisine<BR>✴ Branding, Typography</div>
+              </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 11.55.28 PM.png" height="100px">
+                    </div>
+                    <div class="caption">✴ Rebrand for "Quince"<BR>✴ Branding, Typography</div>
+                      </div>
+
+                      <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.14.57 PM.png" height="500px">
+                </div>
+                    <div class="caption">✴ Radiohead at Manhattan Center, Dec. 19, 1997<BR>✴ Poster Concept</div>
+                </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.37.24 PM.png" height="700px">
+                </div>
+                <div class="caption">✴ Radiohead at Manhattan Center, Dec. 19, 1997<BR>✴ Poster Concept</div>
+            </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 6.53.37 PM.png" height="500px">
+                </div>
+                <div class="caption">✴ Electrical Engineering; Science Pioneers: Nikola Tesla<BR>✴ Book Cover Concept</div>
+            </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.19.14 PM.png" height="250px">
+                </div>
+                <div class="caption">✴ No Doubt at UNO Lakefront Arena, Apr. 27, 1997<BR>✴ Poster Concept</div>
+            </div>
+
+                    <div class="hover-box">
+                        <div class="image-wrapper">
+                    <img src="Screenshot 2025-04-30 at 7.12.07 PM.png" height="400px">
+                </div>
+                <div class="caption">✴ <i>Doppelgänger: Typographic Meditations on the Double</i><BR>✴ Booklet</div>
+        </div>
+
+                
+                    </div>
+                    </center>
+
+                
+
+<!-- <center>
+<div class="container">
+    <div><img src="Screenshot 2025-04-30 at 6.39.24 PM.png" height="100px"></div>
+    <div><img src="Screenshot 2025-04-30 at 6.42.36 PM.png" height="700px"></div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+  </div>
+</center> -->
+
+  <BR><BR>
+            <a href="https://www.are.na/madeline-rael/channels">Are.na</a><BR>
+            <a href="https://www.instagram.com/madmrael/">Instagram</a><BR>
+                <a href="mailto:madmrael@gmail.com">Email</a>
+</div>
+            <center>
+                <BR><BR><BR>
+                <div class="parent">
+                    <img class="asavajda" src="https://m.media-amazon.com/images/M/MV5BMTk0NTcyNTkwM15BMl5BanBnXkFtZTgwODg1NDAxNzE@._V1_.jpg">
+                </div>
+            </center>
+    </body>
+    </html>
+
+    <script type="text/javascript">
+    const colors = ["#252525", "#00ff6e", "#002e1e", "#ffffff", "#8a8a8a"];
+
+window.addEventListener("mousedown", (e) => {
+  const color = colors.shift();
+  document.documentElement.style.setProperty("--highlight-color", color);
+  colors.push(color);
+});
+</script>

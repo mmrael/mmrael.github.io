@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logotransp.png">
+    <title>Madeline Rael</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+    cursor: url(https://i.imgur.com/Wb20DVb.png), default;
+    color:#00ff6e;
+}
+
+h2 {
+    color: #00ff6e;
+    font-size: 36px;
+}
+
+h3 {
+    color: #00ff6e;
+font-size: 16px;
+}
+
+a {
+    font-size: 16px;
+}
+
+:root {
+  --highlight-color: null;
+}
+
+::selection {
+  background: var(--highlight-color);
+}
+
+
+.titlediv {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    left: 30px;
+
+}
+
+.contentdiv {
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    left: 30px;
+    border: 0px solid red;
+}
+
+.descdiv {
+
+    width: 37%;
+    height: 50%;
+    position: absolute;
+    top: 205px;
+    left: 30px;  
+    border: 0px solid red;
+}
+
+.container {
+    width: 99%;
+  margin-top: 74px;
+  padding: 0px;
+  position: absolute;
+  left: 0px;
+  background-color: black;
+  border: 0px solid red;
+}
+
+
+
+@media (max-width: 2000px) {
+
+      a:hover {
+        color: #000;
+        background-color: #000;
+        cursor: url(https://i.imgur.com/Me2o3vx.png), default;
+    
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        color: #00ff6e;
+      background-color: #000; 
+    }
+    .contentdiv {
+        font-size: 15px;
+    }
+    }
+
+    @media (max-width: 390px) {
+    body {
+      background-color: #000; 
+    }
+
+    .contentdiv {
+        width: 100%;
+        font-size: 10px;
+    }
+
+
+    }
+</style>
+<body>
+    <BR>
+        <div class="titlediv">
+        <h2>Southwest Art</h2>
+    <h3>Periodical Redesign</h3>
+    </div>
+    <BR><BR><BR><BR><BR><BR><BR>
+
+    <div class="descdiv">
+    Brand and identity redesign for leading publication dedicated to American Western Art.<BR><BR>
+                <a href="portfolio.htm">← Back to portfolio</a>
+    
+        </div>
+<BR><BR>
+        <div class="container">
+            <img src="https://i.imgur.com/NwdVRmz.png" width="99%">
+            <img src="https://i.imgur.com/U45LN3i.png" width="99%">
+<img src="https://i.imgur.com/ERprP9g.png" width="99%">
+<img src="https://i.imgur.com/FPnUjLn.png" width="99%">
+<img src="https://i.imgur.com/NdZeVrT.png" width="99%">
+<img src="https://i.imgur.com/gTKOiuQ.png" width="99%">
+<img src="https://i.imgur.com/acfOg9Z.png" width="99%">
+
+
+            
+
+        </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    const colors = ["#252525", "#00ff6e", "#002e1e", "#ffffff", "#8a8a8a"];
+
+window.addEventListener("mousedown", (e) => {
+  const color = colors.shift();
+  document.documentElement.style.setProperty("--highlight-color", color);
+  colors.push(color);
+});
+</script>
