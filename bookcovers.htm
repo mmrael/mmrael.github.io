@@ -13,9 +13,10 @@
 </head>
 <style>
     body {
-        cursor: url(https://i.imgur.com/Wb20DVb.png), default;
+        color: #000;
+        background-color: #fff;
         font-size: 17px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Playfair Display", serif;
     font-size: 20px;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -25,7 +26,13 @@
 
     a {
         font-size: 17px;
+        color: #000;
 
+    }
+
+    a:hover {
+    color: #00ff6e;
+    background-color: #002e1e;
     }
     
     :root {
@@ -57,11 +64,11 @@
     }
     
     .namediv {
-        background-color: #00ff6e;
-        border: 7px solid #000;
+        background-color: #fff;
+        border: 7px dotted #00ff6e;
         font-size: 60px;
         width: 500px;
-        height: 10px;
+        height: 0px;
         transition: 500ms;
     }
     
@@ -74,13 +81,13 @@
     
     
         .logo {
-            background-color: #000;
+            background-color: #fff;
         border: 10px dotted #00ff6e;
     position: fixed;
     top: 30px;
     right: 10px;
-    height: 15vh;
-    width: 15vh;
+    height: 10vh;
+    width: 10vh;
     transition: 500ms;
         }
     
@@ -111,14 +118,14 @@
         width: 100%;
       margin-top: 74px;
       padding: 0px;
-      background-color: black;
+      background-color: #efefef;
     }
     
     .container > div {
       display: inline-block;
       vertical-align: top; 
-      background-color: #000;
-      border: 1px solid #000;
+      background-color: #efefef;
+      border: 1px solid #efefef;
       color: #00ff6e;
       padding: 55px;
       font-size: 20px;
@@ -161,7 +168,18 @@
 
         border-radius: 5px;
     filter: drop-shadow(-6px 6px 6px rgb(67, 67, 67));
+    transition: 200ms;
     }
+
+    .image-wrapper > img:hover {
+
+opacity: 0.8;
+}
+
+    .bottomdiv {
+            background-color: #00ff6e;
+            height: 7px;
+        }
     
     /* .quincediv {
         background-color: #000;
@@ -220,6 +238,7 @@
     width: 35vh;
     transition: 500ms;
         }
+
     
         .subheader {
             font-size: 12px;
@@ -278,7 +297,7 @@
     
     <body>
         <div class="imgheader"></div>
-        <div class="logo"><center><a href="portfolio.htm"><img src="https://i.imgur.com/pvrJ4eX.png" height="100" width="100"></a></center></div>
+        <div class="logo"><center><a href="portfolio.htm"><img src="https://i.imgur.com/bqTZBXG.png" height="75" width="75"></a></center></div>
         <BR>
             <div class="header">
     
@@ -325,16 +344,13 @@
                                 <a href="mailto:madmrael@gmail.com">Email</a>
                 
                                 <BR><BR>
+                                    <div class="bottomdiv">
                                     © Madeline Rael, 2025
-                </div>
-                            <center>
-                                <BR>
-                                <div class="parent">
-                                    <img class="asavajda" src="https://m.media-amazon.com/images/M/MV5BMTk0NTcyNTkwM15BMl5BanBnXkFtZTgwODg1NDAxNzE@._V1_.jpg">
-                                </div>
-                                
-                                   
-                            </center>
+                                    </div>
+
+<BR><BR>
+    <BR><BR>
+        <BR><BR>
                             
                     </body>
                     </html>
